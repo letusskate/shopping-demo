@@ -83,3 +83,54 @@ Traceback (most recent call last):
   File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
     raise TemplateDoesNotExist(template_name, chain=chain)
 django.template.exceptions.TemplateDoesNotExist: userinfo.html
+04/Nov/2022 17:17:04 [Thread-2:58660] [django.request:222] [ERROR]- Internal Server Error: /api/users/login
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+04/Nov/2022 17:17:37 [Thread-2:58660] [django.request:222] [ERROR]- Internal Server Error: /api/users/login
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+04/Nov/2022 17:19:13 [Thread-2:58660] [django.request:222] [ERROR]- Internal Server Error: /api/users/login
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html

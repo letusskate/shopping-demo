@@ -21,6 +21,7 @@ class Users(BaseModel):
     last_name = models.CharField(max_length=200)
     email = models.CharField(max_length=200)
     gender = models.SmallIntegerField(choices=UserGender.choices())
+    password = models.CharField(max_length=200,default='123654')
 
     def __str__(self):
         return self.first_name + " " + self.last_name
