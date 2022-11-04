@@ -1,0 +1,185 @@
+04/Nov/2022 10:57:27 [Dummy-1:6204] [django.db.backends:109] [DEBUG]- (0.093) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+04/Nov/2022 10:57:27 [Dummy-1:6204] [django.db.backends:109] [DEBUG]- (0.005) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+04/Nov/2022 11:00:11 [Dummy-1:37148] [django.db.backends:109] [DEBUG]- (0.011) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+04/Nov/2022 11:00:11 [Dummy-1:37148] [django.db.backends:109] [DEBUG]- (0.003) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+04/Nov/2022 11:00:20 [Dummy-1:26660] [django.db.backends:109] [DEBUG]- (0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+04/Nov/2022 11:00:20 [Dummy-1:26660] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+04/Nov/2022 11:00:50 [Dummy-1:65100] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+04/Nov/2022 11:00:50 [Dummy-1:65100] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+04/Nov/2022 11:07:52 [Dummy-1:34600] [django.db.backends:109] [DEBUG]- (0.216) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+04/Nov/2022 11:07:52 [Dummy-1:34600] [django.db.backends:109] [DEBUG]- (0.006) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+04/Nov/2022 11:07:55 [Thread-2:9272] [django.db.backends:109] [DEBUG]- (0.096) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-11-04T03:07:54.594077+00:00'::timestamptz AND "django_session"."session_key" = 'byp0cgopjt7dinkwzu0z4yoa209s8zjh'); args=(datetime.datetime(2022, 11, 4, 3, 7, 54, 594077, tzinfo=<UTC>), 'byp0cgopjt7dinkwzu0z4yoa209s8zjh')
+04/Nov/2022 11:07:55 [Thread-2:9272] [django.db.backends:109] [DEBUG]- (0.014) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+04/Nov/2022 11:07:55 [Thread-2:9272] [django.template:868] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 848, in _resolve_lookup
+    raise VariableDoesNotExist("Failed lookup for key "
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x00000219F28C1790>>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: ayden>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000219F28E55E0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000219F284A0D0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'site_title': 'Django site admin', 'site_header': 'Django administration', 'site_url': '/', 'has_permission': True, 'available_apps': [{'name': 'Carts', 'app_label': 'carts', 'app_url': '/admin/carts/', 'has_module_perms': True, 'models': [{'name': 'CartsGoods', 'object_name': 'CartsGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/carts/cartsgoods/', 'add_url': '/admin/carts/cartsgoods/add/'}]}, {'name': 'Goods', 'app_label': 'goods', 'app_url': '/admin/goods/', 'has_module_perms': True, 'models': [{'name': 'Goods', 'object_name': 'Goods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/goods/goods/', 'add_url': '/admin/goods/goods/add/'}]}, {'name': 'Orders', 'app_label': 'orders', 'app_url': '/admin/orders/', 'has_module_perms': True, 'models': [{'name': 'Orders', 'object_name': 'Orders', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/orders/', 'add_url': '/admin/orders/orders/add/'}, {'name': 'OrdersGoods', 'object_name': 'OrdersGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/ordersgoods/', 'add_url': '/admin/orders/ordersgoods/add/'}]}, {'name': 'Users', 'app_label': 'users', 'app_url': '/admin/users/', 'has_module_perms': True, 'models': [{'name': 'Users', 'object_name': 'Users', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/users/users/', 'add_url': '/admin/users/users/add/'}]}], 'title': 'Site administration', 'app_list': [{'name': 'Carts', 'app_label': 'carts', 'app_url': '/admin/carts/', 'has_module_perms': True, 'models': [{'name': 'CartsGoods', 'object_name': 'CartsGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/carts/cartsgoods/', 'add_url': '/admin/carts/cartsgoods/add/'}]}, {'name': 'Goods', 'app_label': 'goods', 'app_url': '/admin/goods/', 'has_module_perms': True, 'models': [{'name': 'Goods', 'object_name': 'Goods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/goods/goods/', 'add_url': '/admin/goods/goods/add/'}]}, {'name': 'Orders', 'app_label': 'orders', 'app_url': '/admin/orders/', 'has_module_perms': True, 'models': [{'name': 'Orders', 'object_name': 'Orders', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/orders/', 'add_url': '/admin/orders/orders/add/'}, {'name': 'OrdersGoods', 'object_name': 'OrdersGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/ordersgoods/', 'add_url': '/admin/orders/ordersgoods/add/'}]}, {'name': 'Users', 'app_label': 'users', 'app_url': '/admin/users/', 'has_module_perms': True, 'models': [{'name': 'Users', 'object_name': 'Users', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/users/users/', 'add_url': '/admin/users/users/add/'}]}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False}]
+04/Nov/2022 11:07:55 [Thread-2:9272] [django.template:868] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 848, in _resolve_lookup
+    raise VariableDoesNotExist("Failed lookup for key "
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x00000219F28C1790>>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: ayden>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000219F28E55E0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000219F284A0D0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'site_title': 'Django site admin', 'site_header': 'Django administration', 'site_url': '/', 'has_permission': True, 'available_apps': [{'name': 'Carts', 'app_label': 'carts', 'app_url': '/admin/carts/', 'has_module_perms': True, 'models': [{'name': 'CartsGoods', 'object_name': 'CartsGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/carts/cartsgoods/', 'add_url': '/admin/carts/cartsgoods/add/'}]}, {'name': 'Goods', 'app_label': 'goods', 'app_url': '/admin/goods/', 'has_module_perms': True, 'models': [{'name': 'Goods', 'object_name': 'Goods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/goods/goods/', 'add_url': '/admin/goods/goods/add/'}]}, {'name': 'Orders', 'app_label': 'orders', 'app_url': '/admin/orders/', 'has_module_perms': True, 'models': [{'name': 'Orders', 'object_name': 'Orders', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/orders/', 'add_url': '/admin/orders/orders/add/'}, {'name': 'OrdersGoods', 'object_name': 'OrdersGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/ordersgoods/', 'add_url': '/admin/orders/ordersgoods/add/'}]}, {'name': 'Users', 'app_label': 'users', 'app_url': '/admin/users/', 'has_module_perms': True, 'models': [{'name': 'Users', 'object_name': 'Users', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/users/users/', 'add_url': '/admin/users/users/add/'}]}], 'title': 'Site administration', 'app_list': [{'name': 'Carts', 'app_label': 'carts', 'app_url': '/admin/carts/', 'has_module_perms': True, 'models': [{'name': 'CartsGoods', 'object_name': 'CartsGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/carts/cartsgoods/', 'add_url': '/admin/carts/cartsgoods/add/'}]}, {'name': 'Goods', 'app_label': 'goods', 'app_url': '/admin/goods/', 'has_module_perms': True, 'models': [{'name': 'Goods', 'object_name': 'Goods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/goods/goods/', 'add_url': '/admin/goods/goods/add/'}]}, {'name': 'Orders', 'app_label': 'orders', 'app_url': '/admin/orders/', 'has_module_perms': True, 'models': [{'name': 'Orders', 'object_name': 'Orders', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/orders/', 'add_url': '/admin/orders/orders/add/'}, {'name': 'OrdersGoods', 'object_name': 'OrdersGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/ordersgoods/', 'add_url': '/admin/orders/ordersgoods/add/'}]}, {'name': 'Users', 'app_label': 'users', 'app_url': '/admin/users/', 'has_module_perms': True, 'models': [{'name': 'Users', 'object_name': 'Users', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/users/users/', 'add_url': '/admin/users/users/add/'}]}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False}]
+04/Nov/2022 11:07:55 [Thread-2:9272] [django.db.backends:109] [DEBUG]- (0.062) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC  LIMIT 10; args=(1,)
+04/Nov/2022 11:07:55 [Thread-2:9272] [django.server:154] [INFO]- "GET /admin/ HTTP/1.1" 200 6570
+04/Nov/2022 11:08:00 [Thread-2:9272] [django.template:868] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'userinfo'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 848, in _resolve_lookup
+    raise VariableDoesNotExist("Failed lookup for key "
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+04/Nov/2022 11:08:00 [Thread-2:9272] [django.server:154] [WARNING]- "GET /userinfo HTTP/1.1" 404 1970
+04/Nov/2022 11:09:01 [Dummy-1:54640] [django.db.backends:109] [DEBUG]- (0.007) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+04/Nov/2022 11:09:01 [Dummy-1:54640] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+04/Nov/2022 11:09:02 [Thread-2:24256] [django.db.backends:109] [DEBUG]- (0.050) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
+04/Nov/2022 11:09:02 [Thread-2:24256] [django.db.backends:109] [DEBUG]- (0.039) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-11-04T03:09:02.083781+00:00'::timestamptz AND "django_session"."session_key" = 'byp0cgopjt7dinkwzu0z4yoa209s8zjh'); args=(datetime.datetime(2022, 11, 4, 3, 9, 2, 83781, tzinfo=<UTC>), 'byp0cgopjt7dinkwzu0z4yoa209s8zjh')
+04/Nov/2022 11:09:02 [Thread-2:24256] [django.db.backends:109] [DEBUG]- (0.005) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+04/Nov/2022 11:09:02 [Thread-4:13668] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
+04/Nov/2022 11:09:02 [Thread-4:13668] [django.db.backends:109] [DEBUG]- (0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-11-04T03:09:02.876747+00:00'::timestamptz AND "django_session"."session_key" = 'byp0cgopjt7dinkwzu0z4yoa209s8zjh'); args=(datetime.datetime(2022, 11, 4, 3, 9, 2, 876747, tzinfo=<UTC>), 'byp0cgopjt7dinkwzu0z4yoa209s8zjh')
+04/Nov/2022 11:09:02 [Thread-4:13668] [django.db.backends:109] [DEBUG]- (0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+04/Nov/2022 11:09:02 [Thread-4:13668] [django.server:154] [ERROR]- "GET /userinfo HTTP/1.1" 500 85929
+04/Nov/2022 11:09:05 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
+04/Nov/2022 11:09:05 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-11-04T03:09:05.643181+00:00'::timestamptz AND "django_session"."session_key" = 'byp0cgopjt7dinkwzu0z4yoa209s8zjh'); args=(datetime.datetime(2022, 11, 4, 3, 9, 5, 643181, tzinfo=<UTC>), 'byp0cgopjt7dinkwzu0z4yoa209s8zjh')
+04/Nov/2022 11:09:05 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+04/Nov/2022 11:09:05 [Thread-5:44580] [django.server:154] [ERROR]- "GET /userinfo HTTP/1.1" 500 85929
+04/Nov/2022 11:09:09 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
+04/Nov/2022 11:09:09 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-11-04T03:09:09.024923+00:00'::timestamptz AND "django_session"."session_key" = 'byp0cgopjt7dinkwzu0z4yoa209s8zjh'); args=(datetime.datetime(2022, 11, 4, 3, 9, 9, 24923, tzinfo=<UTC>), 'byp0cgopjt7dinkwzu0z4yoa209s8zjh')
+04/Nov/2022 11:09:09 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+04/Nov/2022 11:09:09 [Thread-5:44580] [django.server:154] [ERROR]- "GET /userinfo HTTP/1.1" 500 85929
+04/Nov/2022 11:09:09 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
+04/Nov/2022 11:09:09 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-11-04T03:09:09.228356+00:00'::timestamptz AND "django_session"."session_key" = 'byp0cgopjt7dinkwzu0z4yoa209s8zjh'); args=(datetime.datetime(2022, 11, 4, 3, 9, 9, 228356, tzinfo=<UTC>), 'byp0cgopjt7dinkwzu0z4yoa209s8zjh')
+04/Nov/2022 11:09:09 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+04/Nov/2022 11:09:09 [Thread-5:44580] [django.server:154] [ERROR]- "GET /userinfo HTTP/1.1" 500 85929
+04/Nov/2022 11:11:03 [Dummy-1:34352] [django.db.backends:109] [DEBUG]- (0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+04/Nov/2022 11:11:03 [Dummy-1:34352] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+04/Nov/2022 11:11:03 [Thread-2:64356] [django.db.backends:109] [DEBUG]- (0.048) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
+04/Nov/2022 11:11:03 [Thread-2:64356] [django.server:154] [INFO]- "GET /userinfo HTTP/1.1" 200 230
+04/Nov/2022 11:12:38 [Thread-5:31956] [django.db.backends:109] [DEBUG]- (0.039) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
+04/Nov/2022 11:12:38 [Thread-5:31956] [django.server:154] [INFO]- "GET /userinfo HTTP/1.1" 200 230
+04/Nov/2022 11:24:16 [Dummy-1:54784] [django.db.backends:109] [DEBUG]- (0.274) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+04/Nov/2022 11:24:16 [Dummy-1:54784] [django.db.backends:109] [DEBUG]- (0.023) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
