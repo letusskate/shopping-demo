@@ -19,6 +19,7 @@ from django.urls import path
 
 from apps.carts.views import AddCartsView, EditCartsView
 from apps.goods.views import GoodsView
+from apps.orders.views import MakeOrderView, GetOrdersView
 from apps.users.views import get_userinfo, RegisterView, ChangePasswordView, UserLogin
 
 urlpatterns = [
@@ -30,5 +31,7 @@ urlpatterns = [
     path('api/users/change-password',ChangePasswordView.as_view()),
     path('api/goos/get-goods',GoodsView.as_view()),
     path('api/carts/add-carts',AddCartsView.as_view()),
-    path('api/carts/edit-carts',EditCartsView.as_view())
+    path('api/carts/edit-carts',EditCartsView.as_view()),
+    path('api/orders/make-order',MakeOrderView.as_view()),
+    path('api/orders/get-orders',GetOrdersView.as_view())
 ]

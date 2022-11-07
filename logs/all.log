@@ -250,3 +250,753 @@
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
 07/Nov/2022 11:24:14 [Dummy-1:13128] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 13:19:21 [Thread-2:14144] [django.db.backends:109] [DEBUG]- (0.021) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 13:19:21 [Thread-2:14144] [django.db.backends:109] [DEBUG]- (0.007) SELECT COUNT(*) AS "__count" FROM "goods"; args=()
+07/Nov/2022 13:19:21 [Thread-2:14144] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods"  LIMIT 5; args=()
+07/Nov/2022 13:19:21 [Thread-2:14144] [django.server:154] [INFO]- "GET /api/goos/get-goods?offset=0&limit=5 HTTP/1.1" 200 342
+07/Nov/2022 13:33:37 [Dummy-1:18032] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 13:33:37 [Dummy-1:18032] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 13:43:30 [Dummy-1:22320] [django.db.backends:109] [DEBUG]- (0.007) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 13:43:30 [Dummy-1:22320] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 13:45:58 [Dummy-1:24076] [django.db.backends:109] [DEBUG]- (0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 13:45:58 [Dummy-1:24076] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 13:47:37 [Thread-2:12536] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 13:47:37 [Thread-2:12536] [django.server:154] [INFO]- "POST /api/carts/add-carts HTTP/1.1" 200 41
+07/Nov/2022 13:48:58 [Dummy-1:20348] [django.db.backends:109] [DEBUG]- (0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 13:48:58 [Dummy-1:20348] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 13:49:01 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 13:49:01 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:49:01 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:49:01 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.010) SELECT "cartsGoods"."id", "cartsGoods"."created_at", "cartsGoods"."updated_at", "cartsGoods"."format_created_at", "cartsGoods"."format_updated_at", "cartsGoods"."user_id", "cartsGoods"."good_id", "cartsGoods"."num" FROM "cartsGoods"  LIMIT 21; args=()
+07/Nov/2022 13:49:01 [Thread-2:19964] [django.server:154] [ERROR]- "POST /api/carts/add-carts HTTP/1.1" 500 18826
+07/Nov/2022 13:49:08 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.004) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 13:49:08 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:49:08 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:49:08 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.005) SELECT "cartsGoods"."id", "cartsGoods"."created_at", "cartsGoods"."updated_at", "cartsGoods"."format_created_at", "cartsGoods"."format_updated_at", "cartsGoods"."user_id", "cartsGoods"."good_id", "cartsGoods"."num" FROM "cartsGoods"  LIMIT 21; args=()
+07/Nov/2022 13:49:08 [Thread-2:19964] [django.server:154] [ERROR]- "POST /api/carts/add-carts HTTP/1.1" 500 18826
+07/Nov/2022 13:51:05 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 13:51:05 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:51:05 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:51:05 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.003) SELECT "cartsGoods"."id", "cartsGoods"."created_at", "cartsGoods"."updated_at", "cartsGoods"."format_created_at", "cartsGoods"."format_updated_at", "cartsGoods"."user_id", "cartsGoods"."good_id", "cartsGoods"."num" FROM "cartsGoods"  LIMIT 21; args=()
+07/Nov/2022 13:51:05 [Thread-2:19964] [django.server:154] [ERROR]- "POST /api/carts/add-carts HTTP/1.1" 500 18830
+07/Nov/2022 13:53:43 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 13:53:43 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:53:43 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.003) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:53:43 [Thread-2:19964] [django.db.backends:109] [DEBUG]- (0.002) SELECT "cartsGoods"."id", "cartsGoods"."created_at", "cartsGoods"."updated_at", "cartsGoods"."format_created_at", "cartsGoods"."format_updated_at", "cartsGoods"."user_id", "cartsGoods"."good_id", "cartsGoods"."num" FROM "cartsGoods"  LIMIT 21; args=()
+07/Nov/2022 13:53:43 [Thread-2:19964] [django.server:154] [ERROR]- "POST /api/carts/add-carts HTTP/1.1" 500 18830
+07/Nov/2022 13:55:02 [Dummy-1:22624] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 13:55:02 [Dummy-1:22624] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 13:55:04 [Thread-2:7796] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 13:55:04 [Thread-2:7796] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:55:04 [Thread-2:7796] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:55:04 [Thread-2:7796] [django.db.backends:109] [DEBUG]- (0.002) SELECT "cartsGoods"."id", "cartsGoods"."created_at", "cartsGoods"."updated_at", "cartsGoods"."format_created_at", "cartsGoods"."format_updated_at", "cartsGoods"."user_id", "cartsGoods"."good_id", "cartsGoods"."num" FROM "cartsGoods"  LIMIT 21; args=()
+07/Nov/2022 13:55:04 [Thread-2:7796] [django.server:154] [ERROR]- "POST /api/carts/add-carts HTTP/1.1" 500 18826
+07/Nov/2022 13:55:28 [Dummy-1:10328] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 13:55:28 [Dummy-1:10328] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 13:56:57 [Dummy-1:4632] [django.db.backends:109] [DEBUG]- (0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 13:56:57 [Dummy-1:4632] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 13:56:59 [Thread-2:22796] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 13:56:59 [Thread-2:22796] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:56:59 [Thread-2:22796] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:56:59 [Thread-2:22796] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:56:59 [Thread-2:22796] [django.db.backends:109] [DEBUG]- (0.002) SELECT "cartsGoods"."id", "cartsGoods"."created_at", "cartsGoods"."updated_at", "cartsGoods"."format_created_at", "cartsGoods"."format_updated_at", "cartsGoods"."user_id", "cartsGoods"."good_id", "cartsGoods"."num" FROM "cartsGoods"  LIMIT 21; args=()
+07/Nov/2022 13:56:59 [Thread-2:22796] [django.server:154] [ERROR]- "POST /api/carts/add-carts HTTP/1.1" 500 18830
+07/Nov/2022 13:57:39 [Dummy-1:23056] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 13:57:39 [Dummy-1:23056] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 13:57:40 [Thread-2:1604] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 13:57:40 [Thread-2:1604] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:57:40 [Thread-2:1604] [django.db.backends:109] [DEBUG]- (0.002) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:57:40 [Thread-2:1604] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:57:40 [Thread-2:1604] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:57:40 [Thread-2:1604] [django.db.backends:109] [DEBUG]- (0.051) INSERT INTO "cartsGoods" ("created_at", "updated_at", "format_created_at", "format_updated_at", "user_id", "good_id", "num") VALUES (1667800660, 1667800660, '2022-11-07T05:57:40.765824+00:00'::timestamptz, '2022-11-07T05:57:40.765824+00:00'::timestamptz, 1, 1, 1) RETURNING "cartsGoods"."id"; args=(1667800660, 1667800660, datetime.datetime(2022, 11, 7, 5, 57, 40, 765824, tzinfo=<UTC>), datetime.datetime(2022, 11, 7, 5, 57, 40, 765824, tzinfo=<UTC>), 1, 1, 1)
+07/Nov/2022 13:57:40 [Thread-2:1604] [django.server:154] [ERROR]- "POST /api/carts/add-carts HTTP/1.1" 500 19024
+07/Nov/2022 13:57:46 [Thread-2:1604] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 13:57:46 [Thread-2:1604] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:57:46 [Thread-2:1604] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:57:46 [Thread-2:1604] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:57:46 [Thread-2:1604] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 13:57:46 [Thread-2:1604] [django.db.backends:109] [DEBUG]- (0.001) INSERT INTO "cartsGoods" ("created_at", "updated_at", "format_created_at", "format_updated_at", "user_id", "good_id", "num") VALUES (1667800666, 1667800666, '2022-11-07T05:57:46.180681+00:00'::timestamptz, '2022-11-07T05:57:46.180681+00:00'::timestamptz, 1, 1, 1) RETURNING "cartsGoods"."id"; args=(1667800666, 1667800666, datetime.datetime(2022, 11, 7, 5, 57, 46, 180681, tzinfo=<UTC>), datetime.datetime(2022, 11, 7, 5, 57, 46, 180681, tzinfo=<UTC>), 1, 1, 1)
+07/Nov/2022 13:57:46 [Thread-2:1604] [django.server:154] [ERROR]- "POST /api/carts/add-carts HTTP/1.1" 500 19024
+07/Nov/2022 14:00:44 [Dummy-1:22852] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 14:00:44 [Dummy-1:22852] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 14:00:45 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.004) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:00:45 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:00:45 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.002) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:00:45 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:00:45 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:00:45 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.001) INSERT INTO "cartsGoods" ("created_at", "updated_at", "format_created_at", "format_updated_at", "user_id", "good_id", "num") VALUES (1667800845, 1667800845, '2022-11-07T06:00:45.049820+00:00'::timestamptz, '2022-11-07T06:00:45.049820+00:00'::timestamptz, 1, 1, 1) RETURNING "cartsGoods"."id"; args=(1667800845, 1667800845, datetime.datetime(2022, 11, 7, 6, 0, 45, 49820, tzinfo=<UTC>), datetime.datetime(2022, 11, 7, 6, 0, 45, 49820, tzinfo=<UTC>), 1, 1, 1)
+07/Nov/2022 14:00:45 [Thread-2:23504] [django.server:154] [INFO]- "POST /api/carts/add-carts HTTP/1.1" 200 139
+07/Nov/2022 14:01:22 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:01:22 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 9 ORDER BY "users"."id" ASC  LIMIT 1; args=(9,)
+07/Nov/2022 14:01:22 [Thread-2:23504] [django.server:154] [INFO]- "POST /api/carts/add-carts HTTP/1.1" 200 40
+07/Nov/2022 14:01:29 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:01:29 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:01:29 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:01:29 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:01:29 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:01:29 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.001) INSERT INTO "cartsGoods" ("created_at", "updated_at", "format_created_at", "format_updated_at", "user_id", "good_id", "num") VALUES (1667800889, 1667800889, '2022-11-07T06:01:29.508947+00:00'::timestamptz, '2022-11-07T06:01:29.508947+00:00'::timestamptz, 1, 1, 1) RETURNING "cartsGoods"."id"; args=(1667800889, 1667800889, datetime.datetime(2022, 11, 7, 6, 1, 29, 508947, tzinfo=<UTC>), datetime.datetime(2022, 11, 7, 6, 1, 29, 508947, tzinfo=<UTC>), 1, 1, 1)
+07/Nov/2022 14:01:29 [Thread-2:23504] [django.server:154] [INFO]- "POST /api/carts/add-carts HTTP/1.1" 200 139
+07/Nov/2022 14:01:39 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:01:39 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:01:39 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 3 ORDER BY "goods"."id" ASC  LIMIT 1; args=(3,)
+07/Nov/2022 14:01:39 [Thread-2:23504] [django.server:154] [INFO]- "POST /api/carts/add-carts HTTP/1.1" 200 41
+07/Nov/2022 14:01:48 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:01:48 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:01:48 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.002) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:01:48 [Thread-2:23504] [django.server:154] [INFO]- "POST /api/carts/add-carts HTTP/1.1" 200 69
+07/Nov/2022 14:01:54 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:01:54 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:01:54 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.002) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:01:54 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:01:54 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:01:54 [Thread-2:23504] [django.db.backends:109] [DEBUG]- (0.002) INSERT INTO "cartsGoods" ("created_at", "updated_at", "format_created_at", "format_updated_at", "user_id", "good_id", "num") VALUES (1667800914, 1667800914, '2022-11-07T06:01:54.170629+00:00'::timestamptz, '2022-11-07T06:01:54.170629+00:00'::timestamptz, 1, 1, 1) RETURNING "cartsGoods"."id"; args=(1667800914, 1667800914, datetime.datetime(2022, 11, 7, 6, 1, 54, 170629, tzinfo=<UTC>), datetime.datetime(2022, 11, 7, 6, 1, 54, 170629, tzinfo=<UTC>), 1, 1, 1)
+07/Nov/2022 14:01:54 [Thread-2:23504] [django.server:154] [INFO]- "POST /api/carts/add-carts HTTP/1.1" 200 139
+07/Nov/2022 14:06:56 [Dummy-1:9916] [django.db.backends:109] [DEBUG]- (0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 14:06:56 [Dummy-1:9916] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 14:20:06 [Dummy-1:6596] [django.db.backends:109] [DEBUG]- (0.007) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 14:20:06 [Dummy-1:6596] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 14:25:00 [Dummy-1:9100] [django.db.backends:109] [DEBUG]- (0.007) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 14:25:00 [Dummy-1:9100] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 14:25:34 [Thread-2:14800] [django.db.backends:109] [DEBUG]- (0.281) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:25:34 [Thread-2:14800] [django.db.backends:109] [DEBUG]- (0.015) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:25:34 [Thread-2:14800] [django.db.backends:109] [DEBUG]- (0.032) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:25:34 [Thread-2:14800] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1  LIMIT 21; args=(1,)
+07/Nov/2022 14:25:34 [Thread-2:14800] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1  LIMIT 21; args=(1,)
+07/Nov/2022 14:25:34 [Thread-2:14800] [django.server:154] [ERROR]- "POST /api/carts/edit-carts HTTP/1.1" 500 20034
+07/Nov/2022 14:26:56 [Dummy-1:12008] [django.db.backends:109] [DEBUG]- (0.007) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 14:26:56 [Dummy-1:12008] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 14:26:58 [Thread-2:3588] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:26:58 [Thread-2:3588] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:26:58 [Thread-2:3588] [django.db.backends:109] [DEBUG]- (0.002) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:26:58 [Thread-2:3588] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1  LIMIT 21; args=(1,)
+07/Nov/2022 14:26:58 [Thread-2:3588] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1  LIMIT 21; args=(1,)
+07/Nov/2022 14:26:58 [Thread-2:3588] [django.server:154] [ERROR]- "POST /api/carts/edit-carts HTTP/1.1" 500 20034
+07/Nov/2022 14:28:50 [Dummy-1:10980] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 14:28:50 [Dummy-1:10980] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 14:28:51 [Thread-2:9260] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:28:51 [Thread-2:9260] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:28:51 [Thread-2:9260] [django.db.backends:109] [DEBUG]- (0.002) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:28:51 [Thread-2:9260] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:28:51 [Thread-2:9260] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:28:51 [Thread-2:9260] [django.db.backends:109] [DEBUG]- (0.016) UPDATE "cartsGoods" SET "num" = 1 WHERE ("cartsGoods"."good_id" = 1 AND "cartsGoods"."user_id" = 1); args=(1, 1, 1)
+07/Nov/2022 14:28:51 [Thread-2:9260] [django.server:154] [ERROR]- "POST /api/carts/edit-carts HTTP/1.1" 500 18068
+07/Nov/2022 14:29:57 [Dummy-1:23016] [django.db.backends:109] [DEBUG]- (0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 14:29:57 [Dummy-1:23016] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 14:29:58 [Thread-2:21976] [django.db.backends:109] [DEBUG]- (0.004) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:29:58 [Thread-2:21976] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:29:58 [Thread-2:21976] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:29:58 [Thread-2:21976] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:29:58 [Thread-2:21976] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:29:58 [Thread-2:21976] [django.db.backends:109] [DEBUG]- (0.002) UPDATE "cartsGoods" SET "num" = 1 WHERE ("cartsGoods"."good_id" = 1 AND "cartsGoods"."user_id" = 1); args=(1, 1, 1)
+07/Nov/2022 14:29:58 [Thread-2:21976] [django.server:154] [ERROR]- "POST /api/carts/edit-carts HTTP/1.1" 500 18093
+07/Nov/2022 14:30:13 [Dummy-1:23704] [django.db.backends:109] [DEBUG]- (0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 14:30:13 [Dummy-1:23704] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 14:30:14 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:30:14 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:30:14 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.003) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:30:14 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:30:14 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:30:14 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.002) UPDATE "cartsGoods" SET "num" = 1 WHERE ("cartsGoods"."good_id" = 1 AND "cartsGoods"."user_id" = 1); args=(1, 1, 1)
+07/Nov/2022 14:30:14 [Thread-2:10248] [django.server:154] [ERROR]- "POST /api/carts/edit-carts HTTP/1.1" 500 18065
+07/Nov/2022 14:30:44 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:30:44 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:30:44 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:30:44 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:30:44 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:30:44 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.003) UPDATE "cartsGoods" SET "num" = 1 WHERE ("cartsGoods"."good_id" = 1 AND "cartsGoods"."user_id" = 1); args=(1, 1, 1)
+07/Nov/2022 14:30:44 [Thread-2:10248] [django.server:154] [ERROR]- "POST /api/carts/edit-carts HTTP/1.1" 500 18065
+07/Nov/2022 14:30:47 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.004) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:30:47 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:30:47 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.002) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:30:47 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:30:47 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:30:47 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.003) UPDATE "cartsGoods" SET "num" = 1 WHERE ("cartsGoods"."good_id" = 1 AND "cartsGoods"."user_id" = 1); args=(1, 1, 1)
+07/Nov/2022 14:30:47 [Thread-2:10248] [django.server:154] [ERROR]- "POST /api/carts/edit-carts HTTP/1.1" 500 18065
+07/Nov/2022 14:31:15 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.004) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:31:15 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:15 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:15 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:15 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:16 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.003) UPDATE "cartsGoods" SET "num" = 1 WHERE ("cartsGoods"."good_id" = 1 AND "cartsGoods"."user_id" = 1); args=(1, 1, 1)
+07/Nov/2022 14:31:16 [Thread-2:10248] [django.server:154] [ERROR]- "POST /api/carts/edit-carts HTTP/1.1" 500 18065
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.003) UPDATE "cartsGoods" SET "num" = 1 WHERE ("cartsGoods"."good_id" = 1 AND "cartsGoods"."user_id" = 1); args=(1, 1, 1)
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.server:154] [ERROR]- "POST /api/carts/edit-carts HTTP/1.1" 500 18065
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.005) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.002) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.db.backends:109] [DEBUG]- (0.003) UPDATE "cartsGoods" SET "num" = 1 WHERE ("cartsGoods"."good_id" = 1 AND "cartsGoods"."user_id" = 1); args=(1, 1, 1)
+07/Nov/2022 14:31:17 [Thread-2:10248] [django.server:154] [ERROR]- "POST /api/carts/edit-carts HTTP/1.1" 500 18065
+07/Nov/2022 14:31:45 [Dummy-1:18500] [django.db.backends:109] [DEBUG]- (0.008) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 14:31:45 [Dummy-1:18500] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 14:31:45 [Thread-2:23028] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:31:45 [Thread-2:23028] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:45 [Thread-2:23028] [django.db.backends:109] [DEBUG]- (0.002) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:45 [Thread-2:23028] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:45 [Thread-2:23028] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:31:45 [Thread-2:23028] [django.db.backends:109] [DEBUG]- (0.003) UPDATE "cartsGoods" SET "num" = 1 WHERE ("cartsGoods"."good_id" = 1 AND "cartsGoods"."user_id" = 1); args=(1, 1, 1)
+07/Nov/2022 14:31:45 [Thread-2:23028] [django.server:154] [INFO]- "POST /api/carts/edit-carts HTTP/1.1" 200 143
+07/Nov/2022 14:37:06 [Dummy-1:21288] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 14:37:06 [Dummy-1:21288] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 14:37:21 [Thread-2:19448] [django.db.backends:109] [DEBUG]- (0.004) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 14:37:21 [Thread-2:19448] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:37:21 [Thread-2:19448] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:37:21 [Thread-2:19448] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:37:21 [Thread-2:19448] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 14:37:21 [Thread-2:19448] [django.db.backends:109] [DEBUG]- (0.003) SELECT "cartsGoods"."id", "cartsGoods"."created_at", "cartsGoods"."updated_at", "cartsGoods"."format_created_at", "cartsGoods"."format_updated_at", "cartsGoods"."user_id", "cartsGoods"."good_id", "cartsGoods"."num" FROM "cartsGoods" WHERE ("cartsGoods"."good_id" = 1 AND "cartsGoods"."user_id" = 1) ORDER BY "cartsGoods"."id" ASC  LIMIT 1; args=(1, 1)
+07/Nov/2022 14:37:21 [Thread-2:19448] [django.server:154] [INFO]- "POST /api/carts/edit-carts HTTP/1.1" 200 59
+07/Nov/2022 14:40:19 [Dummy-1:8444] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 14:40:19 [Dummy-1:8444] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 15:23:26 [Dummy-1:20684] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 15:23:26 [Dummy-1:20684] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 15:28:12 [Dummy-1:22028] [django.db.backends:109] [DEBUG]- (0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 15:28:12 [Dummy-1:22028] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 15:41:51 [Dummy-1:24240] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 15:41:51 [Dummy-1:24240] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 15:41:52 [MainThread:6616] [django.db.backends:109] [DEBUG]- (0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 15:41:52 [MainThread:6616] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends.schema:124] [DEBUG]- ALTER TABLE "orders" ADD COLUMN "adress" varchar(200) DEFAULT %s NOT NULL; (params ['shijiazhuang'])
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.105) ALTER TABLE "orders" ADD COLUMN "adress" varchar(200) DEFAULT 'shijiazhuang' NOT NULL; args=['shijiazhuang']
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends.schema:124] [DEBUG]- ALTER TABLE "orders" ALTER COLUMN "adress" DROP DEFAULT; (params [])
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.021) ALTER TABLE "orders" ALTER COLUMN "adress" DROP DEFAULT; args=[]
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends.schema:124] [DEBUG]- ALTER TABLE "orders" ADD COLUMN "phone" varchar(20) DEFAULT %s NOT NULL; (params ['11111111111'])
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.002) ALTER TABLE "orders" ADD COLUMN "phone" varchar(20) DEFAULT '11111111111' NOT NULL; args=['11111111111']
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends.schema:124] [DEBUG]- ALTER TABLE "orders" ALTER COLUMN "phone" DROP DEFAULT; (params [])
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) ALTER TABLE "orders" ALTER COLUMN "phone" DROP DEFAULT; args=[]
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends.schema:124] [DEBUG]- ALTER TABLE "orders" ADD COLUMN "value" integer DEFAULT %s NOT NULL; (params [0])
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.002) ALTER TABLE "orders" ADD COLUMN "value" integer DEFAULT 0 NOT NULL; args=[0]
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends.schema:124] [DEBUG]- ALTER TABLE "orders" ALTER COLUMN "value" DROP DEFAULT; (params [])
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) ALTER TABLE "orders" ALTER COLUMN "value" DROP DEFAULT; args=[]
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.016) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('orders', '0003_auto_20221107_1541', '2022-11-07T07:42:13.908633+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('orders', '0003_auto_20221107_1541', datetime.datetime(2022, 11, 7, 7, 42, 13, 908633, tzinfo=<UTC>))
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.021) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.020) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+07/Nov/2022 15:42:13 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'users' AND "django_content_type"."model" = 'users'); args=('users', 'users')
+07/Nov/2022 15:42:14 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,)
+07/Nov/2022 15:42:14 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'users'; args=('users',)
+07/Nov/2022 15:42:14 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'goods' AND "django_content_type"."model" = 'goods'); args=('goods', 'goods')
+07/Nov/2022 15:42:14 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8,)
+07/Nov/2022 15:42:14 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'goods'; args=('goods',)
+07/Nov/2022 15:42:14 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'orders' AND "django_content_type"."model" = 'orders'); args=('orders', 'orders')
+07/Nov/2022 15:42:14 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'orders' AND "django_content_type"."model" = 'ordersgoods'); args=('orders', 'ordersgoods')
+07/Nov/2022 15:42:14 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9, 10) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(9, 10)
+07/Nov/2022 15:42:14 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'orders'; args=('orders',)
+07/Nov/2022 15:42:14 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'carts' AND "django_content_type"."model" = 'cartsgoods'); args=('carts', 'cartsgoods')
+07/Nov/2022 15:42:14 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (11) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(11,)
+07/Nov/2022 15:42:14 [MainThread:10108] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'carts'; args=('carts',)
+07/Nov/2022 16:04:43 [Dummy-1:11592] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 16:04:43 [Dummy-1:11592] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 16:15:55 [Dummy-1:17140] [django.db.backends:109] [DEBUG]- (0.007) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 16:15:55 [Dummy-1:17140] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 16:49:27 [Dummy-1:1824] [django.db.backends:109] [DEBUG]- (0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 16:49:27 [Dummy-1:1824] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:02:01 [Thread-2:12864] [django.db.backends:109] [DEBUG]- (0.004) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:02:01 [Thread-2:12864] [django.server:154] [ERROR]- "POST /api/orders/make-order HTTP/1.1" 500 18550
+07/Nov/2022 17:02:39 [Dummy-1:14520] [django.db.backends:109] [DEBUG]- (0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:02:39 [Dummy-1:14520] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:02:39 [Thread-2:11964] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:02:39 [Thread-2:11964] [django.server:154] [ERROR]- "POST /api/orders/make-order HTTP/1.1" 500 18547
+07/Nov/2022 17:02:40 [Thread-2:11964] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:02:40 [Thread-2:11964] [django.server:154] [ERROR]- "POST /api/orders/make-order HTTP/1.1" 500 18547
+07/Nov/2022 17:03:04 [Thread-2:11964] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:03:04 [Thread-2:11964] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:03:04 [Thread-2:11964] [django.db.backends:109] [DEBUG]- (0.009) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:03:04 [Thread-2:11964] [django.db.backends:109] [DEBUG]- (0.002) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:03:04 [Thread-2:11964] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:03:04 [Thread-2:11964] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:03:04 [Thread-2:11964] [django.db.backends:109] [DEBUG]- (0.015) INSERT INTO "ordersGoods" ("created_at", "updated_at", "format_created_at", "format_updated_at", "order_id", "good_id", "num") VALUES (1667811784, 1667811784, '2022-11-07T09:03:04.778904+00:00'::timestamptz, '2022-11-07T09:03:04.778904+00:00'::timestamptz, 1, 1, 1) RETURNING "ordersGoods"."id"; args=(1667811784, 1667811784, datetime.datetime(2022, 11, 7, 9, 3, 4, 778904, tzinfo=<UTC>), datetime.datetime(2022, 11, 7, 9, 3, 4, 778904, tzinfo=<UTC>), 1, 1, 1)
+07/Nov/2022 17:03:04 [Thread-2:11964] [django.server:154] [ERROR]- "POST /api/orders/make-order HTTP/1.1" 500 18123
+07/Nov/2022 17:03:18 [Dummy-1:21800] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:03:18 [Dummy-1:21800] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:03:20 [Thread-2:1484] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:03:20 [Thread-2:1484] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:03:20 [Thread-2:1484] [django.db.backends:109] [DEBUG]- (0.003) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:03:20 [Thread-2:1484] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:03:20 [Thread-2:1484] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:03:20 [Thread-2:1484] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:03:20 [Thread-2:1484] [django.db.backends:109] [DEBUG]- (0.001) INSERT INTO "ordersGoods" ("created_at", "updated_at", "format_created_at", "format_updated_at", "order_id", "good_id", "num") VALUES (1667811800, 1667811800, '2022-11-07T09:03:20.268670+00:00'::timestamptz, '2022-11-07T09:03:20.268670+00:00'::timestamptz, 1, 1, 1) RETURNING "ordersGoods"."id"; args=(1667811800, 1667811800, datetime.datetime(2022, 11, 7, 9, 3, 20, 268670, tzinfo=<UTC>), datetime.datetime(2022, 11, 7, 9, 3, 20, 268670, tzinfo=<UTC>), 1, 1, 1)
+07/Nov/2022 17:03:20 [Thread-2:1484] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders"  LIMIT 21; args=()
+07/Nov/2022 17:03:20 [Thread-2:1484] [django.db.backends:109] [DEBUG]- (0.001) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders"  LIMIT 21; args=()
+07/Nov/2022 17:03:20 [Thread-2:1484] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders"  LIMIT 21; args=()
+07/Nov/2022 17:03:20 [Thread-2:1484] [django.server:154] [ERROR]- "POST /api/orders/make-order HTTP/1.1" 500 19965
+07/Nov/2022 17:04:31 [Dummy-1:7936] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:04:31 [Dummy-1:7936] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:05:07 [Dummy-1:8324] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:05:07 [Dummy-1:8324] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:05:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.004) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:05:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:05:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.002) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:05:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.002) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:05:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:05:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:05:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) INSERT INTO "ordersGoods" ("created_at", "updated_at", "format_created_at", "format_updated_at", "order_id", "good_id", "num") VALUES (1667811907, 1667811907, '2022-11-07T09:05:07.529733+00:00'::timestamptz, '2022-11-07T09:05:07.529733+00:00'::timestamptz, 1, 1, 1) RETURNING "ordersGoods"."id"; args=(1667811907, 1667811907, datetime.datetime(2022, 11, 7, 9, 5, 7, 529733, tzinfo=<UTC>), datetime.datetime(2022, 11, 7, 9, 5, 7, 529733, tzinfo=<UTC>), 1, 1, 1)
+07/Nov/2022 17:05:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:05:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:05:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.149) UPDATE "orders" SET "value" = '1.00000' WHERE "orders"."id" = 1; args=('1.00000', 1)
+07/Nov/2022 17:05:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1  LIMIT 21; args=(1,)
+07/Nov/2022 17:05:07 [Thread-2:15156] [django.server:154] [ERROR]- "POST /api/orders/make-order HTTP/1.1" 500 20463
+07/Nov/2022 17:05:48 [MainThread:23688] [django.db.backends:109] [DEBUG]- (0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:05:48 [MainThread:23688] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends.schema:124] [DEBUG]- ALTER TABLE "orders" ALTER COLUMN "value" TYPE numeric(15, 5) USING "value"::numeric(15, 5); (params [])
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.070) ALTER TABLE "orders" ALTER COLUMN "value" TYPE numeric(15, 5) USING "value"::numeric(15, 5); args=[]
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('orders', '0004_auto_20221107_1705', '2022-11-07T09:06:00.646197+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('orders', '0004_auto_20221107_1705', datetime.datetime(2022, 11, 7, 9, 6, 0, 646197, tzinfo=<UTC>))
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.003) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.003) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'users' AND "django_content_type"."model" = 'users'); args=('users', 'users')
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'users'; args=('users',)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'goods' AND "django_content_type"."model" = 'goods'); args=('goods', 'goods')
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8,)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'goods'; args=('goods',)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'orders' AND "django_content_type"."model" = 'orders'); args=('orders', 'orders')
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'orders' AND "django_content_type"."model" = 'ordersgoods'); args=('orders', 'ordersgoods')
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9, 10) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(9, 10)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'orders'; args=('orders',)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'carts' AND "django_content_type"."model" = 'cartsgoods'); args=('carts', 'cartsgoods')
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (11) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(11,)
+07/Nov/2022 17:06:00 [MainThread:11676] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'carts'; args=('carts',)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.003) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) INSERT INTO "ordersGoods" ("created_at", "updated_at", "format_created_at", "format_updated_at", "order_id", "good_id", "num") VALUES (1667811967, 1667811967, '2022-11-07T09:06:07.230138+00:00'::timestamptz, '2022-11-07T09:06:07.230138+00:00'::timestamptz, 1, 1, 1) RETURNING "ordersGoods"."id"; args=(1667811967, 1667811967, datetime.datetime(2022, 11, 7, 9, 6, 7, 230138, tzinfo=<UTC>), datetime.datetime(2022, 11, 7, 9, 6, 7, 230138, tzinfo=<UTC>), 1, 1, 1)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.002) UPDATE "orders" SET "value" = '1.00000' WHERE "orders"."id" = 1; args=('1.00000', 1)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) UPDATE "goods" SET "stock" = 99 WHERE "goods"."id" = 1; args=(99, 1)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.db.backends:109] [DEBUG]- (0.001) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:06:07 [Thread-2:15156] [django.server:154] [INFO]- "POST /api/orders/make-order HTTP/1.1" 200 215
+07/Nov/2022 17:13:51 [Dummy-1:16768] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:13:51 [Dummy-1:16768] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:19:48 [Dummy-1:8608] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:19:48 [Dummy-1:8608] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:19:50 [Thread-2:14612] [django.server:154] [WARNING]- "GET /api/orders/get-orders HTTP/1.1" 403 26
+07/Nov/2022 17:20:09 [Thread-2:14612] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:20:09 [Thread-2:14612] [django.db.backends:109] [DEBUG]- (0.005) SELECT COUNT(*) AS "__count" FROM "orders"; args=()
+07/Nov/2022 17:20:09 [Thread-2:14612] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders"; args=()
+07/Nov/2022 17:20:09 [Thread-2:14612] [django.server:154] [INFO]- "GET /api/orders/get-orders HTTP/1.1" 200 333
+07/Nov/2022 17:20:39 [Thread-2:14612] [django.db.backends:109] [DEBUG]- (0.004) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:20:39 [Thread-2:14612] [django.server:154] [ERROR]- "GET /api/orders/get-orders?offset=0&limit=5 HTTP/1.1" 500 18130
+07/Nov/2022 17:20:49 [Thread-2:14612] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:20:49 [Thread-2:14612] [django.server:154] [ERROR]- "GET /api/orders/get-orders?offset=0&limit=5 HTTP/1.1" 500 18130
+07/Nov/2022 17:21:05 [Thread-2:14612] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:21:05 [Thread-2:14612] [django.server:154] [ERROR]- "GET /api/orders/get-orders HTTP/1.1" 500 18084
+07/Nov/2022 17:21:15 [Thread-2:14612] [django.server:154] [WARNING]- "GET /api/orders/get-orders?offset=0&limit=5 HTTP/1.1" 403 26
+07/Nov/2022 17:21:45 [Dummy-1:15376] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:21:45 [Dummy-1:15376] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:21:56 [Thread-2:2256] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:21:56 [Thread-2:2256] [django.server:154] [ERROR]- "GET /api/orders/get-orders HTTP/1.1" 500 18084
+07/Nov/2022 17:23:25 [Dummy-1:22828] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:23:25 [Dummy-1:22828] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:23:26 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.005) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:23:26 [Thread-2:19644] [django.server:154] [ERROR]- "GET /api/orders/get-orders HTTP/1.1" 500 18084
+07/Nov/2022 17:23:37 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:23:37 [Thread-2:19644] [django.server:154] [ERROR]- "GET /api/orders/get-orders HTTP/1.1" 500 18084
+07/Nov/2022 17:23:38 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:23:38 [Thread-2:19644] [django.server:154] [ERROR]- "GET /api/orders/get-orders HTTP/1.1" 500 18084
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.003) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.003) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.000) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.002) INSERT INTO "ordersGoods" ("created_at", "updated_at", "format_created_at", "format_updated_at", "order_id", "good_id", "num") VALUES (1667813033, 1667813033, '2022-11-07T09:23:53.932851+00:00'::timestamptz, '2022-11-07T09:23:53.932851+00:00'::timestamptz, 1, 1, 1) RETURNING "ordersGoods"."id"; args=(1667813033, 1667813033, datetime.datetime(2022, 11, 7, 9, 23, 53, 932851, tzinfo=<UTC>), datetime.datetime(2022, 11, 7, 9, 23, 53, 932851, tzinfo=<UTC>), 1, 1, 1)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.001) UPDATE "orders" SET "value" = '2.00000' WHERE "orders"."id" = 1; args=('2.00000', 1)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods" WHERE "goods"."id" = 1 ORDER BY "goods"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.001) UPDATE "goods" SET "stock" = 98 WHERE "goods"."id" = 1; args=(98, 1)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders" WHERE "orders"."id" = 1 ORDER BY "orders"."id" ASC  LIMIT 1; args=(1,)
+07/Nov/2022 17:23:53 [Thread-2:19644] [django.server:154] [INFO]- "POST /api/orders/make-order HTTP/1.1" 200 215
+07/Nov/2022 17:24:17 [Thread-2:19644] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:24:17 [Thread-2:19644] [django.server:154] [ERROR]- "GET /api/orders/get-orders?offset=0&limit=5 HTTP/1.1" 500 18130
+07/Nov/2022 17:24:34 [Dummy-1:12988] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:24:34 [Dummy-1:12988] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:24:39 [Thread-2:10828] [django.db.backends:109] [DEBUG]- (0.005) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:24:40 [Thread-2:10828] [django.server:154] [ERROR]- "GET /api/orders/get-orders?offset=0&limit=5 HTTP/1.1" 500 18130
+07/Nov/2022 17:26:02 [Dummy-1:2860] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:26:02 [Dummy-1:2860] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:26:04 [Thread-2:9140] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:26:04 [Thread-2:9140] [django.server:154] [ERROR]- "GET /api/orders/get-orders?offset=0&limit=5 HTTP/1.1" 500 18130
+07/Nov/2022 17:26:05 [Thread-2:9140] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:26:05 [Thread-2:9140] [django.server:154] [ERROR]- "GET /api/orders/get-orders?offset=0&limit=5 HTTP/1.1" 500 18130
+07/Nov/2022 17:27:54 [Dummy-1:22592] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:27:54 [Dummy-1:22592] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:29:17 [Dummy-1:10520] [django.db.backends:109] [DEBUG]- (0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:29:17 [Dummy-1:10520] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:29:18 [Thread-2:18840] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:29:18 [Thread-2:18840] [django.db.backends:109] [DEBUG]- (0.002) SELECT COUNT(*) AS "__count" FROM "orders"; args=()
+07/Nov/2022 17:29:18 [Thread-2:18840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders"; args=()
+07/Nov/2022 17:29:18 [Thread-2:18840] [django.server:154] [INFO]- "GET /api/orders/get-orders?offset=0&limit=5 HTTP/1.1" 200 332
+07/Nov/2022 17:29:29 [Thread-2:18840] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:29:29 [Thread-2:18840] [django.db.backends:109] [DEBUG]- (0.002) SELECT COUNT(*) AS "__count" FROM "orders"; args=()
+07/Nov/2022 17:29:29 [Thread-2:18840] [django.db.backends:109] [DEBUG]- (0.001) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders"; args=()
+07/Nov/2022 17:29:29 [Thread-2:18840] [django.server:154] [INFO]- "GET /api/orders/get-orders?offset=0&limit=5 HTTP/1.1" 200 332
+07/Nov/2022 17:29:58 [Dummy-1:9772] [django.db.backends:109] [DEBUG]- (0.007) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:29:58 [Dummy-1:9772] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:31:53 [Dummy-1:19428] [django.db.backends:109] [DEBUG]- (0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+07/Nov/2022 17:31:53 [Dummy-1:19428] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 17:31:54 [Thread-2:19120] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:31:54 [Thread-2:19120] [django.db.backends:109] [DEBUG]- (0.002) SELECT COUNT(*) AS "__count" FROM "orders"; args=()
+07/Nov/2022 17:31:54 [Thread-2:19120] [django.db.backends:109] [DEBUG]- (0.001) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders"; args=()
+07/Nov/2022 17:31:54 [Thread-2:19120] [django.server:154] [INFO]- "GET /api/orders/get-orders?offset=0&limit=5 HTTP/1.1" 200 332
+07/Nov/2022 17:59:43 [Thread-2:19120] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 17:59:43 [Thread-2:19120] [django.db.backends:109] [DEBUG]- (0.002) SELECT COUNT(*) AS "__count" FROM "orders"; args=()
+07/Nov/2022 17:59:43 [Thread-2:19120] [django.db.backends:109] [DEBUG]- (0.000) SELECT "orders"."id", "orders"."created_at", "orders"."updated_at", "orders"."format_created_at", "orders"."format_updated_at", "orders"."user_id", "orders"."adress", "orders"."phone", "orders"."value" FROM "orders"; args=()
+07/Nov/2022 17:59:43 [Thread-2:19120] [django.server:154] [INFO]- "GET /api/orders/get-orders?offset=0&limit=5 HTTP/1.1" 200 332

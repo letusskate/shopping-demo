@@ -8,14 +8,13 @@ from apps.users.models import Users
 
 
 class AddCartsSerializer(serializers.Serializer):
-    user = serializers.EmailField(
+    user = serializers.CharField(
         max_length=200,allow_blank=False
     )
     good = serializers.CharField(
-        max_length=200
+        max_length=200,allow_blank=False
     )
     num = serializers.IntegerField(
-
     )
 
     def validate(self,attrs):
@@ -33,9 +32,3 @@ class AddCartsSerializer(serializers.Serializer):
 
 
 
-class UserModelSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Users
-        fields = '__all__'
-        # fields = ['id','first_name']
-        # exclude = ['id']
