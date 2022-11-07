@@ -1,89 +1,4 @@
-04/Nov/2022 11:09:02 [Thread-2:24256] [django.request:222] [ERROR]- Internal Server Error: /userinfo
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
-    response = get_response(request)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\users\views.py", line 8, in get_userinfo
-    result = render(request, 'userinfo.html', context={
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\shortcuts.py", line 36, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
-    template = get_template(template_name, using=using)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-django.template.exceptions.TemplateDoesNotExist: userinfo.html
-04/Nov/2022 11:09:02 [Thread-4:13668] [django.request:222] [ERROR]- Internal Server Error: /userinfo
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
-    response = get_response(request)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\users\views.py", line 8, in get_userinfo
-    result = render(request, 'userinfo.html', context={
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\shortcuts.py", line 36, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
-    template = get_template(template_name, using=using)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-django.template.exceptions.TemplateDoesNotExist: userinfo.html
-04/Nov/2022 11:09:05 [Thread-5:44580] [django.request:222] [ERROR]- Internal Server Error: /userinfo
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
-    response = get_response(request)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\users\views.py", line 8, in get_userinfo
-    result = render(request, 'userinfo.html', context={
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\shortcuts.py", line 36, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
-    template = get_template(template_name, using=using)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-django.template.exceptions.TemplateDoesNotExist: userinfo.html
-04/Nov/2022 11:09:09 [Thread-5:44580] [django.request:222] [ERROR]- Internal Server Error: /userinfo
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
-    response = get_response(request)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\users\views.py", line 8, in get_userinfo
-    result = render(request, 'userinfo.html', context={
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\shortcuts.py", line 36, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
-    template = get_template(template_name, using=using)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-django.template.exceptions.TemplateDoesNotExist: userinfo.html
-04/Nov/2022 11:09:09 [Thread-5:44580] [django.request:222] [ERROR]- Internal Server Error: /userinfo
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
-    response = get_response(request)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\users\views.py", line 8, in get_userinfo
-    result = render(request, 'userinfo.html', context={
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\shortcuts.py", line 36, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
-    template = get_template(template_name, using=using)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
-    raise TemplateDoesNotExist(template_name, chain=chain)
-django.template.exceptions.TemplateDoesNotExist: userinfo.html
-04/Nov/2022 17:17:04 [Thread-2:58660] [django.request:222] [ERROR]- Internal Server Error: /api/users/login
+07/Nov/2022 10:10:49 [Thread-2:22036] [django.request:222] [ERROR]- Internal Server Error: /api/users/login
 Traceback (most recent call last):
   File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
     response = get_response(request)
@@ -93,14 +8,10 @@ Traceback (most recent call last):
     response = response.render()
   File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 106, in render
     self.content = self.rendered_content
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 81, in rendered_content
-    template = self.resolve_template(self.template_name)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 63, in resolve_template
-    return select_template(template, using=self.using)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
-    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
-django.template.exceptions.TemplateDoesNotExist: registration/login.html
-04/Nov/2022 17:17:37 [Thread-2:58660] [django.request:222] [ERROR]- Internal Server Error: /api/users/login
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+07/Nov/2022 10:11:19 [Thread-2:13680] [django.request:222] [ERROR]- Internal Server Error: /api/users/login
 Traceback (most recent call last):
   File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
     response = get_response(request)
@@ -110,14 +21,10 @@ Traceback (most recent call last):
     response = response.render()
   File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 106, in render
     self.content = self.rendered_content
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 81, in rendered_content
-    template = self.resolve_template(self.template_name)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 63, in resolve_template
-    return select_template(template, using=self.using)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
-    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
-django.template.exceptions.TemplateDoesNotExist: registration/login.html
-04/Nov/2022 17:19:13 [Thread-2:58660] [django.request:222] [ERROR]- Internal Server Error: /api/users/login
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+07/Nov/2022 10:12:42 [Thread-2:17316] [django.request:222] [ERROR]- Internal Server Error: /api/users/login
 Traceback (most recent call last):
   File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
     response = get_response(request)
@@ -127,10 +34,78 @@ Traceback (most recent call last):
     response = response.render()
   File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 106, in render
     self.content = self.rendered_content
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 81, in rendered_content
-    template = self.resolve_template(self.template_name)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 63, in resolve_template
-    return select_template(template, using=self.using)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
-    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
-django.template.exceptions.TemplateDoesNotExist: registration/login.html
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+07/Nov/2022 10:12:59 [Thread-2:17316] [django.request:222] [ERROR]- Internal Server Error: /api/users/login
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+07/Nov/2022 10:13:30 [Thread-2:22088] [django.request:222] [ERROR]- Internal Server Error: /api/users/login
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+07/Nov/2022 10:32:48 [Thread-2:17184] [django.request:222] [ERROR]- Internal Server Error: /api/users/change-password
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\users\views.py", line 143, in post
+    user.update(password=npswd)
+AttributeError: 'Users' object has no attribute 'update'
+07/Nov/2022 10:36:58 [Thread-2:22236] [django.request:222] [ERROR]- Internal Server Error: /api/users/change-password
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\users\views.py", line 138, in post
+    if user.password!=pswd:
+AttributeError: 'QuerySet' object has no attribute 'password'

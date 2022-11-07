@@ -16,12 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.contrib.auth.views import LoginView
 from django.urls import path
-from apps.users.views import get_userinfo, RegisterView, ChangePasswordView
+
+from apps.carts.views import AddCartsView, EditCartsView
+from apps.goods.views import GoodsView
+from apps.users.views import get_userinfo, RegisterView, ChangePasswordView, UserLogin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('userinfo', get_userinfo),
-    path('api/users/login',LoginView.as_view()),
-    path('api/users/register',RegisterView.as_view()),
-    path('api/users/change-password',ChangePasswordView.as_view())
+    path('api/users/register', RegisterView.as_view()),
+    # path('api/users/login',LoginView.as_view()),
+    path('api/users/login', UserLogin),
+    path('api/users/change-password',ChangePasswordView.as_view()),
+    path('api/goos/get-goods',GoodsView.as_view()),
+    path('api/carts/add-carts',AddCartsView.as_view()),
+    path('api/carts/edit-carts',EditCartsView.as_view())
 ]

@@ -1,437 +1,252 @@
-04/Nov/2022 10:57:27 [Dummy-1:6204] [django.db.backends:109] [DEBUG]- (0.093) 
+07/Nov/2022 09:57:25 [Dummy-1:15000] [django.db.backends:109] [DEBUG]- (0.006) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 10:57:27 [Dummy-1:6204] [django.db.backends:109] [DEBUG]- (0.005) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 11:00:11 [Dummy-1:37148] [django.db.backends:109] [DEBUG]- (0.011) 
+07/Nov/2022 09:57:25 [Dummy-1:15000] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 09:57:31 [Thread-2:4808] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
+07/Nov/2022 09:57:31 [Thread-2:4808] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
+07/Nov/2022 09:59:50 [Dummy-1:5104] [django.db.backends:109] [DEBUG]- (0.005) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 11:00:11 [Dummy-1:37148] [django.db.backends:109] [DEBUG]- (0.003) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 11:00:20 [Dummy-1:26660] [django.db.backends:109] [DEBUG]- (0.005) 
+07/Nov/2022 09:59:50 [Dummy-1:5104] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 09:59:51 [Thread-2:4544] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
+07/Nov/2022 09:59:51 [Thread-2:4544] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
+07/Nov/2022 09:59:52 [Thread-2:4544] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
+07/Nov/2022 09:59:52 [Thread-2:4544] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
+07/Nov/2022 10:00:36 [Dummy-1:20728] [django.db.backends:109] [DEBUG]- (0.004) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 11:00:20 [Dummy-1:26660] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 11:00:50 [Dummy-1:65100] [django.db.backends:109] [DEBUG]- (0.006) 
+07/Nov/2022 10:00:36 [Dummy-1:20728] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:05:31 [Dummy-1:20796] [django.db.backends:109] [DEBUG]- (0.006) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 11:00:50 [Dummy-1:65100] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 11:07:52 [Dummy-1:34600] [django.db.backends:109] [DEBUG]- (0.216) 
+07/Nov/2022 10:05:31 [Dummy-1:20796] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:07:28 [Dummy-1:19676] [django.db.backends:109] [DEBUG]- (0.006) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 11:07:52 [Dummy-1:34600] [django.db.backends:109] [DEBUG]- (0.006) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 11:07:55 [Thread-2:9272] [django.db.backends:109] [DEBUG]- (0.096) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-11-04T03:07:54.594077+00:00'::timestamptz AND "django_session"."session_key" = 'byp0cgopjt7dinkwzu0z4yoa209s8zjh'); args=(datetime.datetime(2022, 11, 4, 3, 7, 54, 594077, tzinfo=<UTC>), 'byp0cgopjt7dinkwzu0z4yoa209s8zjh')
-04/Nov/2022 11:07:55 [Thread-2:9272] [django.db.backends:109] [DEBUG]- (0.014) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
-04/Nov/2022 11:07:55 [Thread-2:9272] [django.template:868] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
-    current = current[bit]
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\context.py", line 83, in __getitem__
-    raise KeyError(key)
-KeyError: 'is_popup'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
-    if isinstance(current, BaseContext) and getattr(type(current), bit):
-AttributeError: type object 'RequestContext' has no attribute 'is_popup'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'is_popup'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 848, in _resolve_lookup
-    raise VariableDoesNotExist("Failed lookup for key "
-django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x00000219F28C1790>>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: ayden>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000219F28E55E0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000219F284A0D0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'site_title': 'Django site admin', 'site_header': 'Django administration', 'site_url': '/', 'has_permission': True, 'available_apps': [{'name': 'Carts', 'app_label': 'carts', 'app_url': '/admin/carts/', 'has_module_perms': True, 'models': [{'name': 'CartsGoods', 'object_name': 'CartsGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/carts/cartsgoods/', 'add_url': '/admin/carts/cartsgoods/add/'}]}, {'name': 'Goods', 'app_label': 'goods', 'app_url': '/admin/goods/', 'has_module_perms': True, 'models': [{'name': 'Goods', 'object_name': 'Goods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/goods/goods/', 'add_url': '/admin/goods/goods/add/'}]}, {'name': 'Orders', 'app_label': 'orders', 'app_url': '/admin/orders/', 'has_module_perms': True, 'models': [{'name': 'Orders', 'object_name': 'Orders', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/orders/', 'add_url': '/admin/orders/orders/add/'}, {'name': 'OrdersGoods', 'object_name': 'OrdersGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/ordersgoods/', 'add_url': '/admin/orders/ordersgoods/add/'}]}, {'name': 'Users', 'app_label': 'users', 'app_url': '/admin/users/', 'has_module_perms': True, 'models': [{'name': 'Users', 'object_name': 'Users', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/users/users/', 'add_url': '/admin/users/users/add/'}]}], 'title': 'Site administration', 'app_list': [{'name': 'Carts', 'app_label': 'carts', 'app_url': '/admin/carts/', 'has_module_perms': True, 'models': [{'name': 'CartsGoods', 'object_name': 'CartsGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/carts/cartsgoods/', 'add_url': '/admin/carts/cartsgoods/add/'}]}, {'name': 'Goods', 'app_label': 'goods', 'app_url': '/admin/goods/', 'has_module_perms': True, 'models': [{'name': 'Goods', 'object_name': 'Goods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/goods/goods/', 'add_url': '/admin/goods/goods/add/'}]}, {'name': 'Orders', 'app_label': 'orders', 'app_url': '/admin/orders/', 'has_module_perms': True, 'models': [{'name': 'Orders', 'object_name': 'Orders', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/orders/', 'add_url': '/admin/orders/orders/add/'}, {'name': 'OrdersGoods', 'object_name': 'OrdersGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/ordersgoods/', 'add_url': '/admin/orders/ordersgoods/add/'}]}, {'name': 'Users', 'app_label': 'users', 'app_url': '/admin/users/', 'has_module_perms': True, 'models': [{'name': 'Users', 'object_name': 'Users', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/users/users/', 'add_url': '/admin/users/users/add/'}]}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False}]
-04/Nov/2022 11:07:55 [Thread-2:9272] [django.template:868] [DEBUG]- Exception while resolving variable 'is_popup' in template 'admin/index.html'.
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
-    current = current[bit]
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\context.py", line 83, in __getitem__
-    raise KeyError(key)
-KeyError: 'is_popup'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
-    if isinstance(current, BaseContext) and getattr(type(current), bit):
-AttributeError: type object 'RequestContext' has no attribute 'is_popup'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'is_popup'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 848, in _resolve_lookup
-    raise VariableDoesNotExist("Failed lookup for key "
-django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x00000219F28C1790>>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: ayden>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000219F28E55E0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000219F284A0D0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'site_title': 'Django site admin', 'site_header': 'Django administration', 'site_url': '/', 'has_permission': True, 'available_apps': [{'name': 'Carts', 'app_label': 'carts', 'app_url': '/admin/carts/', 'has_module_perms': True, 'models': [{'name': 'CartsGoods', 'object_name': 'CartsGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/carts/cartsgoods/', 'add_url': '/admin/carts/cartsgoods/add/'}]}, {'name': 'Goods', 'app_label': 'goods', 'app_url': '/admin/goods/', 'has_module_perms': True, 'models': [{'name': 'Goods', 'object_name': 'Goods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/goods/goods/', 'add_url': '/admin/goods/goods/add/'}]}, {'name': 'Orders', 'app_label': 'orders', 'app_url': '/admin/orders/', 'has_module_perms': True, 'models': [{'name': 'Orders', 'object_name': 'Orders', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/orders/', 'add_url': '/admin/orders/orders/add/'}, {'name': 'OrdersGoods', 'object_name': 'OrdersGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/ordersgoods/', 'add_url': '/admin/orders/ordersgoods/add/'}]}, {'name': 'Users', 'app_label': 'users', 'app_url': '/admin/users/', 'has_module_perms': True, 'models': [{'name': 'Users', 'object_name': 'Users', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/users/users/', 'add_url': '/admin/users/users/add/'}]}], 'title': 'Site administration', 'app_list': [{'name': 'Carts', 'app_label': 'carts', 'app_url': '/admin/carts/', 'has_module_perms': True, 'models': [{'name': 'CartsGoods', 'object_name': 'CartsGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/carts/cartsgoods/', 'add_url': '/admin/carts/cartsgoods/add/'}]}, {'name': 'Goods', 'app_label': 'goods', 'app_url': '/admin/goods/', 'has_module_perms': True, 'models': [{'name': 'Goods', 'object_name': 'Goods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/goods/goods/', 'add_url': '/admin/goods/goods/add/'}]}, {'name': 'Orders', 'app_label': 'orders', 'app_url': '/admin/orders/', 'has_module_perms': True, 'models': [{'name': 'Orders', 'object_name': 'Orders', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/orders/', 'add_url': '/admin/orders/orders/add/'}, {'name': 'OrdersGoods', 'object_name': 'OrdersGoods', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/orders/ordersgoods/', 'add_url': '/admin/orders/ordersgoods/add/'}]}, {'name': 'Users', 'app_label': 'users', 'app_url': '/admin/users/', 'has_module_perms': True, 'models': [{'name': 'Users', 'object_name': 'Users', 'perms': {'add': True, 'change': True, 'delete': True, 'view': True}, 'view_only': False, 'admin_url': '/admin/users/users/', 'add_url': '/admin/users/users/add/'}]}], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_BIDI': False}]
-04/Nov/2022 11:07:55 [Thread-2:9272] [django.db.backends:109] [DEBUG]- (0.062) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC  LIMIT 10; args=(1,)
-04/Nov/2022 11:07:55 [Thread-2:9272] [django.server:154] [INFO]- "GET /admin/ HTTP/1.1" 200 6570
-04/Nov/2022 11:08:00 [Thread-2:9272] [django.template:868] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
-    response = get_response(request)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 111, in _get_response
-    resolver_match = resolver.resolve(request.path_info)
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\urls\resolvers.py", line 520, in resolve
-    raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'userinfo'}
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
-    current = current[bit]
-TypeError: 'URLResolver' object is not subscriptable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
-    current = getattr(current, bit)
-AttributeError: 'URLResolver' object has no attribute 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
-    current = current[int(bit)]
-ValueError: invalid literal for int() with base 10: 'name'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\template\base.py", line 848, in _resolve_lookup
-    raise VariableDoesNotExist("Failed lookup for key "
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
-04/Nov/2022 11:08:00 [Thread-2:9272] [django.server:154] [WARNING]- "GET /userinfo HTTP/1.1" 404 1970
-04/Nov/2022 11:09:01 [Dummy-1:54640] [django.db.backends:109] [DEBUG]- (0.007) 
+07/Nov/2022 10:07:28 [Dummy-1:19676] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:10:49 [Dummy-1:21920] [django.db.backends:109] [DEBUG]- (0.005) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 11:09:01 [Dummy-1:54640] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 11:09:02 [Thread-2:24256] [django.db.backends:109] [DEBUG]- (0.050) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
-04/Nov/2022 11:09:02 [Thread-2:24256] [django.db.backends:109] [DEBUG]- (0.039) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-11-04T03:09:02.083781+00:00'::timestamptz AND "django_session"."session_key" = 'byp0cgopjt7dinkwzu0z4yoa209s8zjh'); args=(datetime.datetime(2022, 11, 4, 3, 9, 2, 83781, tzinfo=<UTC>), 'byp0cgopjt7dinkwzu0z4yoa209s8zjh')
-04/Nov/2022 11:09:02 [Thread-2:24256] [django.db.backends:109] [DEBUG]- (0.005) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
-04/Nov/2022 11:09:02 [Thread-4:13668] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
-04/Nov/2022 11:09:02 [Thread-4:13668] [django.db.backends:109] [DEBUG]- (0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-11-04T03:09:02.876747+00:00'::timestamptz AND "django_session"."session_key" = 'byp0cgopjt7dinkwzu0z4yoa209s8zjh'); args=(datetime.datetime(2022, 11, 4, 3, 9, 2, 876747, tzinfo=<UTC>), 'byp0cgopjt7dinkwzu0z4yoa209s8zjh')
-04/Nov/2022 11:09:02 [Thread-4:13668] [django.db.backends:109] [DEBUG]- (0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
-04/Nov/2022 11:09:02 [Thread-4:13668] [django.server:154] [ERROR]- "GET /userinfo HTTP/1.1" 500 85929
-04/Nov/2022 11:09:05 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
-04/Nov/2022 11:09:05 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-11-04T03:09:05.643181+00:00'::timestamptz AND "django_session"."session_key" = 'byp0cgopjt7dinkwzu0z4yoa209s8zjh'); args=(datetime.datetime(2022, 11, 4, 3, 9, 5, 643181, tzinfo=<UTC>), 'byp0cgopjt7dinkwzu0z4yoa209s8zjh')
-04/Nov/2022 11:09:05 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
-04/Nov/2022 11:09:05 [Thread-5:44580] [django.server:154] [ERROR]- "GET /userinfo HTTP/1.1" 500 85929
-04/Nov/2022 11:09:09 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
-04/Nov/2022 11:09:09 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-11-04T03:09:09.024923+00:00'::timestamptz AND "django_session"."session_key" = 'byp0cgopjt7dinkwzu0z4yoa209s8zjh'); args=(datetime.datetime(2022, 11, 4, 3, 9, 9, 24923, tzinfo=<UTC>), 'byp0cgopjt7dinkwzu0z4yoa209s8zjh')
-04/Nov/2022 11:09:09 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
-04/Nov/2022 11:09:09 [Thread-5:44580] [django.server:154] [ERROR]- "GET /userinfo HTTP/1.1" 500 85929
-04/Nov/2022 11:09:09 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
-04/Nov/2022 11:09:09 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-11-04T03:09:09.228356+00:00'::timestamptz AND "django_session"."session_key" = 'byp0cgopjt7dinkwzu0z4yoa209s8zjh'); args=(datetime.datetime(2022, 11, 4, 3, 9, 9, 228356, tzinfo=<UTC>), 'byp0cgopjt7dinkwzu0z4yoa209s8zjh')
-04/Nov/2022 11:09:09 [Thread-5:44580] [django.db.backends:109] [DEBUG]- (0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
-04/Nov/2022 11:09:09 [Thread-5:44580] [django.server:154] [ERROR]- "GET /userinfo HTTP/1.1" 500 85929
-04/Nov/2022 11:11:03 [Dummy-1:34352] [django.db.backends:109] [DEBUG]- (0.005) 
+07/Nov/2022 10:10:49 [Dummy-1:21920] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:10:49 [Thread-2:22036] [django.db.backends:109] [DEBUG]- (0.011) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE ("users"."email" = '1@1.com' AND "users"."password" = '123654') ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com', '123654')
+07/Nov/2022 10:10:49 [Thread-2:22036] [django.server:154] [ERROR]- "POST /api/users/login HTTP/1.1" 500 74108
+07/Nov/2022 10:11:10 [Dummy-1:10156] [django.db.backends:109] [DEBUG]- (0.004) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 11:11:03 [Dummy-1:34352] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 11:11:03 [Thread-2:64356] [django.db.backends:109] [DEBUG]- (0.048) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
-04/Nov/2022 11:11:03 [Thread-2:64356] [django.server:154] [INFO]- "GET /userinfo HTTP/1.1" 200 230
-04/Nov/2022 11:12:38 [Thread-5:31956] [django.db.backends:109] [DEBUG]- (0.039) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender" FROM "users" WHERE "users"."id" = 1; args=(1,)
-04/Nov/2022 11:12:38 [Thread-5:31956] [django.server:154] [INFO]- "GET /userinfo HTTP/1.1" 200 230
-04/Nov/2022 11:24:16 [Dummy-1:54784] [django.db.backends:109] [DEBUG]- (0.274) 
+07/Nov/2022 10:11:10 [Dummy-1:10156] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:11:11 [Thread-2:13680] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE ("users"."email" = '1@1.com' AND "users"."password" = '123654') ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com', '123654')
+07/Nov/2022 10:11:11 [Thread-2:13680] [django.server:154] [INFO]- "POST /api/users/login HTTP/1.1" 200 187
+07/Nov/2022 10:11:19 [Thread-2:13680] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE ("users"."email" = '1@1.com' AND "users"."password" = '12365') ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com', '12365')
+07/Nov/2022 10:11:19 [Thread-2:13680] [django.server:154] [ERROR]- "POST /api/users/login HTTP/1.1" 500 74108
+07/Nov/2022 10:12:32 [Dummy-1:23644] [django.db.backends:109] [DEBUG]- (0.005) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 11:24:16 [Dummy-1:54784] [django.db.backends:109] [DEBUG]- (0.023) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:06:28 [MainThread:57412] [django.db.backends:109] [DEBUG]- (0.073) 
+07/Nov/2022 10:12:32 [Dummy-1:23644] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:12:34 [Thread-2:17316] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE ("users"."email" = '1@1.com' AND "users"."password" = '123654') ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com', '123654')
+07/Nov/2022 10:12:34 [Thread-2:17316] [django.server:154] [INFO]- "POST /api/users/login HTTP/1.1" 200 187
+07/Nov/2022 10:12:42 [Thread-2:17316] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE ("users"."email" = '1@1.com' AND "users"."password" = '12365') ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com', '12365')
+07/Nov/2022 10:12:42 [Thread-2:17316] [django.server:154] [ERROR]- "POST /api/users/login HTTP/1.1" 500 74108
+07/Nov/2022 10:12:58 [Thread-2:17316] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE ("users"."email" = '1@1.com' AND "users"."password" = '12365') ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com', '12365')
+07/Nov/2022 10:12:59 [Thread-2:17316] [django.server:154] [ERROR]- "POST /api/users/login HTTP/1.1" 500 74108
+07/Nov/2022 10:13:29 [Dummy-1:21760] [django.db.backends:109] [DEBUG]- (0.006) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:06:28 [MainThread:57412] [django.db.backends:109] [DEBUG]- (0.007) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.006) 
+07/Nov/2022 10:13:29 [Dummy-1:21760] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:13:30 [Thread-2:22088] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:13:30 [Thread-2:22088] [django.server:154] [ERROR]- "POST /api/users/login HTTP/1.1" 500 74108
+07/Nov/2022 10:14:44 [Dummy-1:17824] [django.db.backends:109] [DEBUG]- (0.005) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) 
+07/Nov/2022 10:14:44 [Dummy-1:17824] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:14:44 [Thread-2:10000] [django.db.backends:109] [DEBUG]- (0.005) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:14:44 [Thread-2:10000] [django.server:154] [INFO]- "POST /api/users/login HTTP/1.1" 200 53
+07/Nov/2022 10:15:33 [Dummy-1:7108] [django.db.backends:109] [DEBUG]- (0.006) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.001) 
+07/Nov/2022 10:15:33 [Dummy-1:7108] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:19:05 [Thread-2:13980] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:19:05 [Thread-2:13980] [django.server:154] [INFO]- "POST /api/users/login HTTP/1.1" 200 187
+07/Nov/2022 10:23:07 [Dummy-1:16824] [django.db.backends:109] [DEBUG]- (0.004) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends.schema:124] [DEBUG]- ALTER TABLE "users" ADD COLUMN "password" varchar(200) DEFAULT %s NOT NULL; (params ['123654'])
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.055) ALTER TABLE "users" ADD COLUMN "password" varchar(200) DEFAULT '123654' NOT NULL; args=['123654']
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends.schema:124] [DEBUG]- ALTER TABLE "users" ALTER COLUMN "password" DROP DEFAULT; (params [])
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.006) ALTER TABLE "users" ALTER COLUMN "password" DROP DEFAULT; args=[]
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) 
+07/Nov/2022 10:23:07 [Dummy-1:16824] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:23:31 [Dummy-1:18936] [django.db.backends:109] [DEBUG]- (0.005) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.010) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('users', '0002_users_password', '2022-11-04T09:06:35.462816+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('users', '0002_users_password', datetime.datetime(2022, 11, 4, 9, 6, 35, 462816, tzinfo=<UTC>))
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.001) 
+07/Nov/2022 10:23:31 [Dummy-1:18936] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:25:36 [Dummy-1:21696] [django.db.backends:109] [DEBUG]- (0.006) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.010) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.009) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'users' AND "django_content_type"."model" = 'users'); args=('users', 'users')
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'users'; args=('users',)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'goods' AND "django_content_type"."model" = 'goods'); args=('goods', 'goods')
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8,)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'goods'; args=('goods',)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'orders' AND "django_content_type"."model" = 'orders'); args=('orders', 'orders')
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'orders' AND "django_content_type"."model" = 'ordersgoods'); args=('orders', 'ordersgoods')
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9, 10) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(9, 10)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'orders'; args=('orders',)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'carts' AND "django_content_type"."model" = 'cartsgoods'); args=('carts', 'cartsgoods')
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (11) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(11,)
-04/Nov/2022 17:06:35 [MainThread:64840] [django.db.backends:109] [DEBUG]- (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'carts'; args=('carts',)
-04/Nov/2022 17:16:50 [Dummy-1:47028] [django.db.backends:109] [DEBUG]- (0.331) 
+07/Nov/2022 10:25:36 [Dummy-1:21696] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:25:51 [Dummy-1:21428] [django.db.backends:109] [DEBUG]- (0.007) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:16:50 [Dummy-1:47028] [django.db.backends:109] [DEBUG]- (0.093) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:17:04 [Thread-2:58660] [django.server:154] [ERROR]- "GET /api/users/login HTTP/1.1" 500 84450
-04/Nov/2022 17:17:37 [Thread-2:58660] [django.server:154] [ERROR]- "GET /api/users/login HTTP/1.1" 500 84452
-04/Nov/2022 17:19:13 [Thread-2:58660] [django.server:154] [ERROR]- "GET /api/users/login HTTP/1.1" 500 84458
-04/Nov/2022 17:20:29 [Thread-2:58660] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
-04/Nov/2022 17:20:29 [Thread-2:58660] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
-04/Nov/2022 17:25:57 [Dummy-1:56108] [django.db.backends:109] [DEBUG]- (0.112) 
+07/Nov/2022 10:25:51 [Dummy-1:21428] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:26:03 [Dummy-1:17712] [django.db.backends:109] [DEBUG]- (0.005) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:25:57 [Dummy-1:56108] [django.db.backends:109] [DEBUG]- (0.011) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:26:26 [Dummy-1:4636] [django.db.backends:109] [DEBUG]- (0.216) 
+07/Nov/2022 10:26:03 [Dummy-1:17712] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:29:05 [Dummy-1:17156] [django.db.backends:109] [DEBUG]- (0.008) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:26:26 [Dummy-1:4636] [django.db.backends:109] [DEBUG]- (0.003) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:26:31 [Thread-2:58136] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
-04/Nov/2022 17:26:31 [Thread-2:58136] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
-04/Nov/2022 17:27:30 [Dummy-1:48660] [django.db.backends:109] [DEBUG]- (0.007) 
+07/Nov/2022 10:29:05 [Dummy-1:17156] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:32:25 [Thread-2:17184] [django.server:154] [WARNING]- "POST /api/users/change-password HTTP/1.1" 403 26
+07/Nov/2022 10:32:48 [Thread-2:17184] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:32:48 [Thread-2:17184] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:32:48 [Thread-2:17184] [django.server:154] [ERROR]- "POST /api/users/change-password HTTP/1.1" 500 18094
+07/Nov/2022 10:34:33 [Dummy-1:19932] [django.db.backends:109] [DEBUG]- (0.006) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:27:30 [Dummy-1:48660] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:27:31 [Thread-2:24216] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
-04/Nov/2022 17:27:31 [Thread-2:24216] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
-04/Nov/2022 17:27:32 [Thread-2:24216] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
-04/Nov/2022 17:27:32 [Thread-2:24216] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
-04/Nov/2022 17:30:35 [Dummy-1:48628] [django.db.backends:109] [DEBUG]- (0.030) 
+07/Nov/2022 10:34:33 [Dummy-1:19932] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:35:44 [Dummy-1:18768] [django.db.backends:109] [DEBUG]- (0.005) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:30:35 [Dummy-1:48628] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:30:40 [Thread-2:52352] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
-04/Nov/2022 17:30:40 [Thread-2:52352] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
-04/Nov/2022 17:30:44 [Thread-2:52352] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
-04/Nov/2022 17:30:44 [Thread-2:52352] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
-04/Nov/2022 17:31:04 [Dummy-1:57772] [django.db.backends:109] [DEBUG]- (0.007) 
+07/Nov/2022 10:35:44 [Dummy-1:18768] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:35:45 [Thread-2:19852] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:35:45 [Thread-2:19852] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:35:45 [Thread-2:19852] [django.db.backends:109] [DEBUG]- (0.030) UPDATE "users" SET "password" = '123456' WHERE "users"."email" = '1@1.com'; args=('123456', '1@1.com')
+07/Nov/2022 10:35:45 [Thread-2:19852] [django.server:154] [INFO]- "POST /api/users/change-password HTTP/1.1" 200 57
+07/Nov/2022 10:36:55 [Dummy-1:4200] [django.db.backends:109] [DEBUG]- (0.006) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:31:04 [Dummy-1:57772] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:31:08 [Thread-2:59748] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
-04/Nov/2022 17:31:08 [Thread-2:59748] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
-04/Nov/2022 17:31:11 [Thread-2:59748] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
-04/Nov/2022 17:31:11 [Thread-2:59748] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
-04/Nov/2022 17:31:45 [Dummy-1:27668] [django.db.backends:109] [DEBUG]- (0.008) 
+07/Nov/2022 10:36:55 [Dummy-1:4200] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:36:58 [Thread-2:22236] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:36:58 [Thread-2:22236] [django.db.backends:109] [DEBUG]- (0.001) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com'; args=('1@1.com',)
+07/Nov/2022 10:36:58 [Thread-2:22236] [django.server:154] [ERROR]- "POST /api/users/change-password HTTP/1.1" 500 18100
+07/Nov/2022 10:37:59 [Dummy-1:20700] [django.db.backends:109] [DEBUG]- (0.005) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:31:45 [Dummy-1:27668] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:31:49 [Thread-2:18216] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
-04/Nov/2022 17:31:49 [Thread-2:18216] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
-04/Nov/2022 17:32:32 [Dummy-1:25676] [django.db.backends:109] [DEBUG]- (0.209) 
+07/Nov/2022 10:37:59 [Dummy-1:20700] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 10:38:00 [Thread-2:16736] [django.db.backends:109] [DEBUG]- (0.003) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:38:00 [Thread-2:16736] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:38:00 [Thread-2:16736] [django.server:154] [INFO]- "POST /api/users/change-password HTTP/1.1" 200 53
+07/Nov/2022 10:38:12 [Thread-2:16736] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:38:12 [Thread-2:16736] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:38:12 [Thread-2:16736] [django.db.backends:109] [DEBUG]- (0.012) UPDATE "users" SET "password" = '123654' WHERE "users"."email" = '1@1.com'; args=('123654', '1@1.com')
+07/Nov/2022 10:38:12 [Thread-2:16736] [django.server:154] [INFO]- "POST /api/users/change-password HTTP/1.1" 200 61
+07/Nov/2022 10:52:58 [Thread-2:16736] [django.db.backends:109] [DEBUG]- (0.016) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:52:58 [Thread-2:16736] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:52:58 [Thread-2:16736] [django.server:154] [INFO]- "POST /api/users/change-password HTTP/1.1" 200 53
+07/Nov/2022 10:53:07 [Thread-2:16736] [django.db.backends:109] [DEBUG]- (0.004) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:53:07 [Thread-2:16736] [django.db.backends:109] [DEBUG]- (0.000) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 10:53:07 [Thread-2:16736] [django.server:154] [INFO]- "POST /api/users/change-password HTTP/1.1" 200 52
+07/Nov/2022 11:06:50 [Dummy-1:10760] [django.db.backends:109] [DEBUG]- (0.007) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:32:32 [Dummy-1:25676] [django.db.backends:109] [DEBUG]- (0.003) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:32:36 [Thread-2:10340] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
-04/Nov/2022 17:32:36 [Thread-2:10340] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
-04/Nov/2022 17:33:49 [Dummy-1:62644] [django.db.backends:109] [DEBUG]- (0.006) 
+07/Nov/2022 11:06:50 [Dummy-1:10760] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 11:08:51 [Thread-2:17476] [django.db.backends:109] [DEBUG]- (0.002) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC  LIMIT 1; args=('1@1.com',)
+07/Nov/2022 11:08:51 [Thread-2:17476] [django.db.backends:109] [DEBUG]- (0.033) SELECT COUNT(*) AS "__count" FROM "goods"; args=()
+07/Nov/2022 11:08:51 [Thread-2:17476] [django.db.backends:109] [DEBUG]- (0.001) SELECT "goods"."id", "goods"."created_at", "goods"."updated_at", "goods"."format_created_at", "goods"."format_updated_at", "goods"."name", "goods"."price", "goods"."kind", "goods"."stock", "goods"."introduce" FROM "goods"  LIMIT 5; args=()
+07/Nov/2022 11:08:51 [Thread-2:17476] [django.server:154] [INFO]- "GET /api/goos/get-goods?offset=0&limit=5 HTTP/1.1" 200 342
+07/Nov/2022 11:10:53 [Dummy-1:11564] [django.db.backends:109] [DEBUG]- (0.006) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:33:49 [Dummy-1:62644] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:35:40 [Thread-2:63308] [django.server:154] [WARNING]- "POST /api/users/register HTTP/1.1" 403 26
-04/Nov/2022 17:36:30 [Dummy-1:65304] [django.db.backends:109] [DEBUG]- (0.027) 
+07/Nov/2022 11:10:53 [Dummy-1:11564] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 11:21:52 [Dummy-1:22968] [django.db.backends:109] [DEBUG]- (0.006) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:36:30 [Dummy-1:65304] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:36:31 [Thread-2:23620] [django.db.backends:109] [DEBUG]- (0.012) SELECT (1) AS "a" FROM "users" WHERE "users"."email" = 'xxx4@xxx.com'  LIMIT 1; args=('xxx4@xxx.com',)
-04/Nov/2022 17:36:31 [Thread-2:23620] [django.db.backends:109] [DEBUG]- (0.016) INSERT INTO "users" ("created_at", "updated_at", "format_created_at", "format_updated_at", "first_name", "last_name", "email", "gender", "password") VALUES (1667554591, 1667554591, '2022-11-04T09:36:31.070938+00:00'::timestamptz, '2022-11-04T09:36:31.070938+00:00'::timestamptz, 'ayden2', 'wang2', 'xxx4@xxx.com', 1, '123654') RETURNING "users"."id"; args=(1667554591, 1667554591, datetime.datetime(2022, 11, 4, 9, 36, 31, 70938, tzinfo=<UTC>), datetime.datetime(2022, 11, 4, 9, 36, 31, 70938, tzinfo=<UTC>), 'ayden2', 'wang2', 'xxx4@xxx.com', 1, '123654')
-04/Nov/2022 17:36:31 [Thread-2:23620] [django.server:154] [INFO]- "POST /api/users/register HTTP/1.1" 200 58
-04/Nov/2022 17:36:31 [Thread-2:23620] [django.db.backends:109] [DEBUG]- (0.002) SELECT (1) AS "a" FROM "users" WHERE "users"."email" = 'xxx4@xxx.com'  LIMIT 1; args=('xxx4@xxx.com',)
-04/Nov/2022 17:36:31 [Thread-2:23620] [django.server:154] [INFO]- "POST /api/users/register HTTP/1.1" 200 42
-04/Nov/2022 17:36:32 [Thread-2:23620] [django.db.backends:109] [DEBUG]- (0.002) SELECT (1) AS "a" FROM "users" WHERE "users"."email" = 'xxx4@xxx.com'  LIMIT 1; args=('xxx4@xxx.com',)
-04/Nov/2022 17:36:32 [Thread-2:23620] [django.server:154] [INFO]- "POST /api/users/register HTTP/1.1" 200 42
-04/Nov/2022 17:36:32 [Thread-2:23620] [django.db.backends:109] [DEBUG]- (0.002) SELECT (1) AS "a" FROM "users" WHERE "users"."email" = 'xxx4@xxx.com'  LIMIT 1; args=('xxx4@xxx.com',)
-04/Nov/2022 17:36:32 [Thread-2:23620] [django.server:154] [INFO]- "POST /api/users/register HTTP/1.1" 200 42
-04/Nov/2022 17:36:41 [Thread-2:23620] [django.db.backends:109] [DEBUG]- (0.002) SELECT (1) AS "a" FROM "users" WHERE "users"."email" = 'xxx5@xxx.com'  LIMIT 1; args=('xxx5@xxx.com',)
-04/Nov/2022 17:36:41 [Thread-2:23620] [django.db.backends:109] [DEBUG]- (0.011) INSERT INTO "users" ("created_at", "updated_at", "format_created_at", "format_updated_at", "first_name", "last_name", "email", "gender", "password") VALUES (1667554601, 1667554601, '2022-11-04T09:36:41.181138+00:00'::timestamptz, '2022-11-04T09:36:41.181138+00:00'::timestamptz, 'ayden2', 'wang2', 'xxx5@xxx.com', 1, '123654') RETURNING "users"."id"; args=(1667554601, 1667554601, datetime.datetime(2022, 11, 4, 9, 36, 41, 181138, tzinfo=<UTC>), datetime.datetime(2022, 11, 4, 9, 36, 41, 181138, tzinfo=<UTC>), 'ayden2', 'wang2', 'xxx5@xxx.com', 1, '123654')
-04/Nov/2022 17:36:41 [Thread-2:23620] [django.server:154] [INFO]- "POST /api/users/register HTTP/1.1" 200 58
-04/Nov/2022 17:38:21 [Thread-2:23620] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
-04/Nov/2022 17:38:21 [Thread-2:23620] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
-04/Nov/2022 17:39:28 [Dummy-1:38508] [django.db.backends:109] [DEBUG]- (0.016) 
+07/Nov/2022 11:21:52 [Dummy-1:22968] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+07/Nov/2022 11:24:14 [Dummy-1:13128] [django.db.backends:109] [DEBUG]- (0.005) 
             SELECT c.relname, c.relkind
             FROM pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
             WHERE c.relkind IN ('r', 'v')
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:39:28 [Dummy-1:38508] [django.db.backends:109] [DEBUG]- (0.283) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:42:33 [Dummy-1:62924] [django.db.backends:109] [DEBUG]- (0.027) 
-            SELECT c.relname, c.relkind
-            FROM pg_catalog.pg_class c
-            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
-            WHERE c.relkind IN ('r', 'v')
-                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
-                AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:42:33 [Dummy-1:62924] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:42:34 [Thread-2:65976] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
-04/Nov/2022 17:42:34 [Thread-2:65976] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
-04/Nov/2022 17:43:20 [Dummy-1:28776] [django.db.backends:109] [DEBUG]- (0.006) 
-            SELECT c.relname, c.relkind
-            FROM pg_catalog.pg_class c
-            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
-            WHERE c.relkind IN ('r', 'v')
-                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
-                AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:43:20 [Dummy-1:28776] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:44:09 [Dummy-1:21652] [django.db.backends:109] [DEBUG]- (0.038) 
-            SELECT c.relname, c.relkind
-            FROM pg_catalog.pg_class c
-            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
-            WHERE c.relkind IN ('r', 'v')
-                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
-                AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:44:09 [Dummy-1:21652] [django.db.backends:109] [DEBUG]- (0.004) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:44:55 [Dummy-1:48364] [django.db.backends:109] [DEBUG]- (0.054) 
-            SELECT c.relname, c.relkind
-            FROM pg_catalog.pg_class c
-            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
-            WHERE c.relkind IN ('r', 'v')
-                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
-                AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:44:55 [Dummy-1:48364] [django.db.backends:109] [DEBUG]- (0.004) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:46:31 [Dummy-1:23028] [django.db.backends:109] [DEBUG]- (0.009) 
-            SELECT c.relname, c.relkind
-            FROM pg_catalog.pg_class c
-            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
-            WHERE c.relkind IN ('r', 'v')
-                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
-                AND pg_catalog.pg_table_is_visible(c.oid); args=None
-04/Nov/2022 17:46:31 [Dummy-1:23028] [django.db.backends:109] [DEBUG]- (0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
-04/Nov/2022 17:47:09 [Thread-2:60276] [django.security.csrf:222] [WARNING]- Forbidden (CSRF cookie not set.): /api/users/login
-04/Nov/2022 17:47:09 [Thread-2:60276] [django.server:154] [WARNING]- "POST /api/users/login HTTP/1.1" 403 2868
-04/Nov/2022 17:47:28 [Thread-2:60276] [django.db.backends:109] [DEBUG]- (0.021) SELECT (1) AS "a" FROM "users" WHERE "users"."email" = 'xxx5@xxx.com'  LIMIT 1; args=('xxx5@xxx.com',)
-04/Nov/2022 17:47:28 [Thread-2:60276] [django.server:154] [INFO]- "POST /api/users/register HTTP/1.1" 200 42
-04/Nov/2022 17:47:35 [Thread-2:60276] [django.db.backends:109] [DEBUG]- (0.010) SELECT "users"."id", "users"."created_at", "users"."updated_at", "users"."format_created_at", "users"."format_updated_at", "users"."first_name", "users"."last_name", "users"."email", "users"."gender", "users"."password" FROM "users" WHERE "users"."id" = 1; args=(1,)
-04/Nov/2022 17:47:35 [Thread-2:60276] [django.server:154] [INFO]- "GET /userinfo HTTP/1.1" 200 230
+07/Nov/2022 11:24:14 [Dummy-1:13128] [django.db.backends:109] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
