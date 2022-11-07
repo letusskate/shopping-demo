@@ -88,3 +88,43 @@ REST_FRAMEWORK = {    #把JWTtoken校验注册
 RAP2 (bundleb2b.net)
 
 ### 20221104下午
+1.配置redis
+1.安装包
+pip install django-redis==4.10.0
+2.设置setting
+CACHES = {
+    "default":{
+        "BACKEND":"django_redis.cache.RedisCache",
+        "LOCATION":"redis://:@localhost:6379/0",#最后的反斜杠0代表第几个数据库，redis默认有16个数据库
+        "OPTIONS":{
+            "CLIENT_CLASS":"django_redis.client.DefaultClient",
+        }
+    },
+    "session": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://:@localhost:6379/1",  # 最后的反斜杠0代表第几个数据库，redis默认有16个数据库
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+2.写注册接口
+成功
+又改了一下数据库，user表加了密码，别忘了设置default
+3.写登录接口
+403forbidden
+[image](https://user-images.githubusercontent.com/58077831/200227257-934e2fc1-d49a-4d00-abe2-692be022bbe9.png)
+4.写改密码接口
+还没写完
+
+
+### 20221107上午
+1.登录接口
+一共三种方法避免，我试了两种，依然报403错误。
+放弃rest framwork，用原生django再写一次。因为这个接口不需要token校验，因此并不一定要用restframwork。问题得以避免，接口正常运行
+2.改密码接口
+两种方法，一种是save，一种是update，我用的update，注意不要查一个人两次，不然要花双倍时间
+3.查看商品接口
+注意模糊查询位置，还没有写好所有参数
+4.添加购物车接口
+没写完!
