@@ -29,7 +29,7 @@ urlpatterns = [
     # path('api/users/login',LoginView.as_view()),
     path('api/users/login', UserLogin),
     path('api/users/change-password',ChangePasswordView.as_view()),
-    path('api/goos/get-goods',GoodsView.as_view()),
+    path('api/goods/get-goods',GoodsView.as_view()),
     path('api/carts/add-carts',AddCartsView.as_view()),
     path('api/carts/edit-carts',EditCartsView.as_view()),
     path('api/orders/make-order',MakeOrderView.as_view()),

@@ -34,12 +34,16 @@ class MakeOrderView(APIView):
                 value=0
             )
             ordersid=order.id
-        # 订单中插入物品，注意减少物品库存，更新订单价格
-        ordersGoods = OrdersGoods.objects.create(
-            order=Orders.objects.filter(id=ordersid).first(),
-            good=Goods.objects.filter(id=data['goodsid']).first(),
-            num=data['goodsnum']
-        )
+        # 订单中插入物品，如果已经有，那就增加数量，如果没有，那就创建
+        ordergoods=OrdersGoods.objects.filter(order=ordersid,good=data['goodsid'])
+        if not ordergoods.first():
+            ordersGoods = OrdersGoods.objects.create(
+                order=Orders.objects.filter(id=ordersid).first(),
+                good=Goods.objects.filter(id=data['goodsid']).first(),
+                num=data['goodsnum']
+            )
+        else:
+            ordergoods.update(num=ordergoods.first().num+data['goodsnum'])
         # 更新订单价格
         preprice=Orders.objects.filter(id=ordersid).first().value
         thisprice=data['goodsnum']*Goods.objects.filter(id=data['goodsid']).first().price
@@ -47,6 +51,8 @@ class MakeOrderView(APIView):
         # 更新物品库存
         prestock=Goods.objects.filter(id=data['goodsid']).first().stock
         Goods.objects.filter(id=data['goodsid']).update(stock=prestock-data['goodsnum'])
+        #删除缓存
+        cache.delete('order_data')
         return Response({'code': 200, 'message': 'success', "data": {
             "user-id": data['userid'],
             "orders-id": ordersid,
@@ -64,11 +70,10 @@ class GetOrdersView(APIView):
         # 注意类型转换
         offset = int(request.GET.get('offset', 0))
         limit = int(request.GET.get('limit', 10))
-        cache.delete('order_data')
+
         if cache.get('order_data'):
-            orders = cache.get('order_data')
-            order_data = OrdersModelSerializer(orders, many=True).data
-            total_count = order_data.count()
+            order_data = cache.get('order_data')
+            total_count = len(order_data)
         else:
             orders = Orders.objects.filter()
             total_count = orders.count()

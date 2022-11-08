@@ -1094,3 +1094,363 @@ Traceback (most recent call last):
   File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\orders\views.py", line 70, in get
     total_count = order_data.count()
 TypeError: list.count() takes exactly one argument (0 given)
+08/Nov/2022 09:30:56 [Thread-8:18356] [django.request:222] [ERROR]- Internal Server Error: /api/orders/make-order
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\orders\views.py", line 39, in post
+    if not ordergoods.first():
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\query.py", line 605, in first
+    for obj in (self if self.ordered else self.order_by('pk'))[:1]:
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\query.py", line 268, in __iter__
+    self._fetch_all()
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1052, in execute_sql
+    sql, params = self.as_sql()
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\sql\compiler.py", line 464, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\sql\compiler.py", line 390, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\sql\where.py", line 81, in as_sql
+    sql, params = compiler.compile(child)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\sql\compiler.py", line 390, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 130, in as_sql
+    return super().as_sql(compiler, connection)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\lookups.py", line 163, in as_sql
+    rhs_sql, rhs_params = self.process_rhs(compiler, connection)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\lookups.py", line 256, in process_rhs
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+08/Nov/2022 09:33:54 [Thread-8:18356] [django.request:222] [ERROR]- Internal Server Error: /api/orders/make-order
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\orders\views.py", line 39, in post
+    if not ordergoods.first():
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\query.py", line 605, in first
+    for obj in (self if self.ordered else self.order_by('pk'))[:1]:
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\query.py", line 268, in __iter__
+    self._fetch_all()
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1052, in execute_sql
+    sql, params = self.as_sql()
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\sql\compiler.py", line 464, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\sql\compiler.py", line 390, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\sql\where.py", line 81, in as_sql
+    sql, params = compiler.compile(child)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\sql\compiler.py", line 390, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 130, in as_sql
+    return super().as_sql(compiler, connection)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\lookups.py", line 163, in as_sql
+    rhs_sql, rhs_params = self.process_rhs(compiler, connection)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\db\models\lookups.py", line 256, in process_rhs
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+08/Nov/2022 09:58:17 [Thread-2:15928] [django.request:222] [ERROR]- Internal Server Error: /api/orders/get-orders
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\orders\views.py", line 74, in get
+    order_data = OrdersModelSerializer(orders, many=True).data
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 757, in data
+    ret = super().data
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 674, in to_representation
+    return [
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 526, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\relations.py", line 265, in to_representation
+    return value.pk
+AttributeError: 'int' object has no attribute 'pk'
+08/Nov/2022 09:58:19 [Thread-2:15928] [django.request:222] [ERROR]- Internal Server Error: /api/orders/get-orders
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\orders\views.py", line 74, in get
+    order_data = OrdersModelSerializer(orders, many=True).data
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 757, in data
+    ret = super().data
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 674, in to_representation
+    return [
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 526, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\relations.py", line 265, in to_representation
+    return value.pk
+AttributeError: 'int' object has no attribute 'pk'
+08/Nov/2022 10:00:09 [Thread-2:1452] [django.request:222] [ERROR]- Internal Server Error: /api/orders/get-orders
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\orders\views.py", line 74, in get
+    order_data = OrdersModelSerializer(orders, many=True).data
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 757, in data
+    ret = super().data
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 261, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 674, in to_representation
+    return [
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 675, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 526, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\relations.py", line 265, in to_representation
+    return value.pk
+AttributeError: 'int' object has no attribute 'pk'
+08/Nov/2022 10:01:34 [Thread-2:4184] [django.request:222] [ERROR]- Internal Server Error: /api/orders/get-orders
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\orders\views.py", line 74, in get
+    total_count = order_data.count()
+TypeError: list.count() takes exactly one argument (0 given)
+08/Nov/2022 10:08:13 [Thread-2:27796] [django.request:222] [ERROR]- Internal Server Error: /api/goos/get-goods
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\goods\views.py", line 20, in get
+    total_count = goods_data.count()
+TypeError: list.count() takes exactly one argument (0 given)
+08/Nov/2022 10:09:17 [Thread-2:27796] [django.request:222] [ERROR]- Internal Server Error: /api/goos/get-goods
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\goods\views.py", line 20, in get
+    total_count = goods_data.count()
+TypeError: list.count() takes exactly one argument (0 given)
+08/Nov/2022 10:09:18 [Thread-2:27796] [django.request:222] [ERROR]- Internal Server Error: /api/goos/get-goods
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\goods\views.py", line 20, in get
+    total_count = goods_data.count()
+TypeError: list.count() takes exactly one argument (0 given)
+08/Nov/2022 10:09:19 [Thread-2:27796] [django.request:222] [ERROR]- Internal Server Error: /api/goos/get-goods
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\goods\views.py", line 20, in get
+    total_count = goods_data.count()
+TypeError: list.count() takes exactly one argument (0 given)
+08/Nov/2022 10:09:35 [Thread-2:27796] [django.request:222] [ERROR]- Internal Server Error: /api/goos/get-goods
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\goods\views.py", line 20, in get
+    total_count = goods_data.count()
+TypeError: list.count() takes exactly one argument (0 given)
+08/Nov/2022 10:09:37 [Thread-2:27796] [django.request:222] [ERROR]- Internal Server Error: /api/goos/get-goods
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\goods\views.py", line 20, in get
+    total_count = goods_data.count()
+TypeError: list.count() takes exactly one argument (0 given)

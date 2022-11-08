@@ -11,13 +11,13 @@ from apps.goods.serializers import GoodsModelSerializer
 class GoodsView(APIView):
     # authentication_classes = ()  # 不再token校验
     def get(self,request):
-        id_query = request.GET.get('id')  # tom
+        name_query = request.GET.get('name')
         #注意类型转换
         offset = int(request.GET.get('offset', 0))
         limit = int(request.GET.get('limit', 10))
         if cache.get('goods_data'):
             goods_data = cache.get('goods_data')
-            total_count = goods_data.count()
+            total_count = len(goods_data)
             return Response({
                 "code": 200,
                 'message': 'success',
