@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.contrib.auth.views import LoginView
 from django.urls import path
 
+from apps.bc.views import CreateBCCustomerView, CreateBCOrderView
 from apps.carts.views import AddCartsView, EditCartsView
 from apps.goods.views import GoodsView
 from apps.orders.views import MakeOrderView, GetOrdersView, CreateOrderView
@@ -34,5 +35,7 @@ urlpatterns = [
     path('api/carts/edit-carts',EditCartsView.as_view()),
     path('api/orders/make-order',MakeOrderView.as_view()),
     path('api/orders/get-orders',GetOrdersView.as_view()),
-    path('api/orders/create-order',CreateOrderView.as_view())
+    path('api/orders/create-order',CreateOrderView.as_view()),
+    path('api/bc/create-customer',CreateBCCustomerView.as_view()),
+    path('api/bc/create-order',CreateBCOrderView.as_view())
 ]

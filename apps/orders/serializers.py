@@ -73,13 +73,12 @@ class CreateOrderSerializer(serializers.Serializer):
         max_length=200, allow_blank=False
     )
     adress = serializers.CharField(
-        max_length=200,allow_blank=True
+        max_length=200,allow_blank=False
     )
     phone = serializers.CharField(
-        max_length=20,allow_blank=True
+        max_length=20,allow_blank=False
     )
-
-    lst = serializers.ListField(
+    goods = serializers.ListField(
 
     )
     def validate(self, attrs):
@@ -89,17 +88,17 @@ class CreateOrderSerializer(serializers.Serializer):
         # 地址和订单id不能为空
         adress = attrs.get('adress')
         phone = attrs.get('phone')
-        if adress!='' or phone!='':
+        if adress=='' or phone=='':
             raise serializers.ValidationError("Please input adress and phone")
         #检验列表中的商品和数量
-        for i in attrs.get('lst'):
+        for i in attrs.get('goods'):
             # 商品不能不存在
-            good=i['goodsid']   #i是这样的 {'goodsid':1,'goodsnum':2}
+            good=i['goods-id']   #i是这样的 {'goods-id':1,'goods-num':2}
             _good = Goods.objects.filter(id=good).first()
             if not _good:
                 raise serializers.ValidationError("Goods not exists")
             #库存不能不够
-            num = i['goodsnum']
+            num = i['goods-num']
             if _good.stock < num:
                 raise serializers.ValidationError("Stock limited, you need to add less than {}".format(_good.stock))
         return attrs

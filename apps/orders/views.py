@@ -96,6 +96,7 @@ class GetOrdersView(APIView):
             }
         })
 
+#实现传任意多参数
 class CreateOrderView(APIView):
     def post(self,request):
         import json
@@ -104,7 +105,38 @@ class CreateOrderView(APIView):
             'userid': data.get('userid'),
             'adress': data.get('adress'),
             'phone': data.get('phone'),
-            'lst': data.get('lst')
+            'goods': data.get('goods')
         })
         if not serializer.is_valid():
             return Response(serializer.errors)
+        #新建订单
+        order = Orders.objects.create(
+            user=Users.objects.filter(id=data['userid']).first(),
+            adress=data['adress'],
+            phone=data['phone'],
+            value=0
+        )
+        #储存订单总价格
+        totalvalue=0
+        for i in data['goods']:
+            # 对于列表元素新建ordersgoods
+            ordersGoods = OrdersGoods.objects.create(
+                order=Orders.objects.filter(id=order.id).first(),
+                good=Goods.objects.filter(id=i['goods-id']).first(),
+                num=i['goods-num']
+            )
+            thisGoods=Goods.objects.filter(id=i['goods-id'])
+            #对于列表元素更新库存
+            thisGoods.update(stock=thisGoods.first().stock-i['goods-num'])
+            #储存订单总价格
+            totalvalue+=thisGoods.first().price*i['goods-num']
+        #对于列表元素更新订单价格
+        Orders.objects.filter(id=order.id).update(value=totalvalue)
+        return Response({'code': 200, 'message': 'success', "data": {
+            "user-id": data['userid'],
+            "orders-id": order.id,
+            "goods":data['goods'],
+            "order-total-price":totalvalue,
+            "adress":data['adress'],
+            "phone":data['phone']
+        }})

@@ -1552,3 +1552,175 @@ Traceback (most recent call last):
   File "C:\Users\silk\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
     raise JSONDecodeError("Expecting value", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+09/Nov/2022 09:20:58 [Thread-2:21332] [django.request:222] [ERROR]- Internal Server Error: /api/orders/create-order
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\orders\views.py", line 109, in post
+    if not serializer.is_valid():
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 235, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 433, in run_validation
+    value = self.validate(value)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\orders\serializers.py", line 96, in validate
+    good=i['goodsid']   #i是这样的 {'goodsid':1,'goodsnum':2}
+KeyError: 'goodsid'
+09/Nov/2022 09:21:01 [Thread-2:21332] [django.request:222] [ERROR]- Internal Server Error: /api/orders/create-order
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\orders\views.py", line 109, in post
+    if not serializer.is_valid():
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 235, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\serializers.py", line 433, in run_validation
+    value = self.validate(value)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\orders\serializers.py", line 96, in validate
+    good=i['goodsid']   #i是这样的 {'goodsid':1,'goodsnum':2}
+KeyError: 'goodsid'
+09/Nov/2022 09:21:29 [Thread-2:34792] [django.request:222] [ERROR]- Internal Server Error: /api/orders/create-order
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 507, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 419, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+09/Nov/2022 09:40:01 [Thread-2:7160] [django.request:222] [ERROR]- Internal Server Error: /api/orders/create-order
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\orders\views.py", line 126, in post
+    num=i['goods-sum']
+KeyError: 'goods-sum'
+09/Nov/2022 09:42:17 [Thread-2:23016] [django.request:222] [ERROR]- Internal Server Error: /api/orders/create-order
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\orders\views.py", line 138, in post
+    "goods":data['lst'],
+KeyError: 'lst'
+09/Nov/2022 11:38:13 [Thread-2:13212] [django.request:222] [ERROR]- Internal Server Error: /api/bc/create-customer
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 507, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 419, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'requests.models.Response'>`
+09/Nov/2022 11:40:01 [Thread-2:144] [django.request:222] [ERROR]- Internal Server Error: /api/bc/create-customer
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 507, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 419, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'dict'>`
+09/Nov/2022 11:40:03 [Thread-2:144] [django.request:222] [ERROR]- Internal Server Error: /api/bc/create-customer
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 507, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 419, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'dict'>`
