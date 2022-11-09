@@ -22,12 +22,18 @@ class AddCartsView(APIView):
         })
         if not serializer.is_valid():
             return Response(serializer.errors)
-        carts=CartsGoods.objects.create(
-            #外键新插入数据时，值应该等于主表中的对象，而不是主键
-            user=Users.objects.filter(id=data['userid']).first(),
-            good=Goods.objects.filter(id=data['goodsid']).first(),
-            num=data['numbers']
-        )
+        #如果购物车本身就有该商品，那么应该叠加数量；否则应该创建商品
+        cartsGoods=CartsGoods.objects.filter(user=data['userid'], good=data['goodsid'])
+        if not cartsGoods.first():
+            carts=CartsGoods.objects.create(
+                #外键新插入数据时，值应该等于主表中的对象，而不是主键
+                user=Users.objects.filter(id=data['userid']).first(),
+                good=Goods.objects.filter(id=data['goodsid']).first(),
+                num=data['numbers']
+            )
+        else:
+            cartsGoods.update(num=cartsGoods.first().num+data['numbers'])
+            carts=cartsGoods.first() #显示的竟然是更新后的数据！
         cache.delete('carts_data')  # 旁路模式，删除缓存
         return JsonResponse({'code': 200, 'message': 'success', "data": {
             "user-id": carts.user.id,

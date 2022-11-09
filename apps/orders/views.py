@@ -5,7 +5,7 @@ from rest_framework.views import APIView
 
 from apps.goods.models import Goods
 from apps.orders.models import OrdersGoods, Orders
-from apps.orders.serializers import MakeOrderSerializer, OrdersModelSerializer
+from apps.orders.serializers import MakeOrderSerializer, OrdersModelSerializer, CreateOrderSerializer
 from apps.users.models import Users
 
 
@@ -65,6 +65,7 @@ class MakeOrderView(APIView):
             "phone":Orders.objects.filter(id=ordersid).first().phone
         }})
 
+
 class GetOrdersView(APIView):
     def get(self, request):
         # 注意类型转换
@@ -94,3 +95,16 @@ class GetOrdersView(APIView):
                 }
             }
         })
+
+class CreateOrderView(APIView):
+    def post(self,request):
+        import json
+        data = json.loads(request.body)
+        serializer = CreateOrderSerializer(data={
+            'userid': data.get('userid'),
+            'adress': data.get('adress'),
+            'phone': data.get('phone'),
+            'lst': data.get('lst')
+        })
+        if not serializer.is_valid():
+            return Response(serializer.errors)
