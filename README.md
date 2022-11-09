@@ -1,5 +1,9 @@
 # shopping-demo
 silk assessment component
+
+## Version 1.0.0（20221109 17:40)
+After 4 days' work, I have finished the demo by myself. It's my first developing demo as I enjoyed machine learning and deep learning in my college life. I have learnt a lot from database designing to coding and testing. It is like a summry of my learning time and a presantation of my first job. I know it has many disadvantages, but I love it.  
+
 ## my coding diary
 ### 20221103下午
 #### 1.pip install Django==2.1.12
