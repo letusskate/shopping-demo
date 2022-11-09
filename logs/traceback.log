@@ -1724,3 +1724,81 @@ Traceback (most recent call last):
   File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 419, in finalize_response
     assert isinstance(response, HttpResponseBase), (
 AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'dict'>`
+09/Nov/2022 15:02:11 [Thread-2:40860] [django.request:222] [ERROR]- Internal Server Error: /api/bc/create-order
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\request.py", line 409, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\bc\views.py", line 54, in post
+    new_order = request.post(url, headers=headers, data=data)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\request.py", line 411, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'post'
+09/Nov/2022 15:07:34 [Thread-2:2856] [django.request:222] [ERROR]- Internal Server Error: /api/bc/create-order
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\bc\views.py", line 54, in post
+    new_order = requests.post(url, headers=headers, data=requests.body)
+AttributeError: module 'requests' has no attribute 'body'
+09/Nov/2022 15:07:35 [Thread-2:2856] [django.request:222] [ERROR]- Internal Server Error: /api/bc/create-order
+Traceback (most recent call last):
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\silk\Desktop\work_space\shopping_demo\apps\bc\views.py", line 54, in post
+    new_order = requests.post(url, headers=headers, data=requests.body)
+AttributeError: module 'requests' has no attribute 'body'
