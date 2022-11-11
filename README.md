@@ -1,7 +1,7 @@
 # shopping-demo
 silk assessment component
 ## Version 1.1.0（202211011 18:00)
-After learning. I have fixed some bug![image](https://user-images.githubusercontent.com/58077831/201316183-83ab5ca7-ad3c-4d86-be28-6fd8e4588121.png)
+After learning, I have fixed some bug.
 ## Version 1.0.0（20221109 17:40)
 After 4 days' work, I have finished the demo by myself. It's my first developing demo as I enjoyed machine learning and deep learning in my college life. I have learnt a lot from database designing to coding and testing. It is like a summry of my learning time and a presantation of my first job. I know it has many disadvantages, but I love it.  
 
