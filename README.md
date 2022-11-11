@@ -199,3 +199,18 @@ Navicat15无法打开postgressql15，能打开postgres13。
 附加题1的接口很好写，因为没多少输入
 附加题2的接口内容太复杂了，因为没有任何调整，因此要根据文档的要求都打进去。
 后来发现rap2可以导入，直接把json实例粘贴进去，他会自己创建。
+
+### 20221111下午
+#### 1.order的删除问题
+user = models.ForeignKey(Users, related_name='user_orders', on_delete=models.SET_NULL, null=True)
+Make migrations
+migrate
+#### 2.ordergoods的删除问题，商品删除了，订单也不能删除
+good = models.ForeignKey(Goods, related_name='good_ordersGoods', on_delete=models.SET_NULL, null=True)
+Make migrations
+migrate
+#### 3.password作为密文
+From Django.contrib.auth.hashers import make_password,check_password
+Make password每次密文都不一样，checkpassword（明文、密文）
+在前端进行加密后，进行传输，之后在后端进行解密比对。
+但是自己测试的时候，只能后端先加密再解密
