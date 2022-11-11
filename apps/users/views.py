@@ -8,6 +8,7 @@ from rest_framework.views import APIView
 from apps.users.models import Users
 import json
 from apps.users.serializers import CreateUserSerializer
+from django.contrib.auth.hashers import make_password,check_password
 
 # Create your views here.
 
@@ -100,7 +101,9 @@ def UserLogin(request):
                 'code': 404,
                 'message': "User data not exist"
             })
-        if user.password!=pswd:
+        pswd = make_password(pswd)
+        # if user.password!=pswd:
+        if not check_password(user.password,pswd):
             return JsonResponse({
                 'code': 404,
                 'message': "User password not correct"

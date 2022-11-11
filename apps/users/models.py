@@ -5,6 +5,7 @@ from apps.utils.base_model import BaseModel
 from enum import IntEnum
 
 
+
 class UserGender(IntEnum):
     FEMALE = 0
     MALE = 1
